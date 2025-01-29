@@ -105,6 +105,69 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "(DOU)",
 		natDexTier: "(OU)",
 	},
+
+	// AniCAP Formatting
+
+	obsidislug: {
+		tier: "(OU)",
+	},
+	chaynzor: {
+		tier: "(OU)",
+	},
+	cormatose: {
+		tier: "(OU)",
+	},
+	fleaclipse: {
+		tier: "(OU)",
+	},
+	satyralpa: {
+		tier: "(OU)",
+	},
+	dodogama: {
+		tier: "(OU)",
+	},
+	lizendro: {
+		tier: "(OU)",
+	},
+	gammoth: {
+		tier: "(OU)",
+	},
+	saruglace: {
+		tier: "(OU)",
+	},
+	scallywatt: {
+		tier: "(OU)",
+	},
+	levireap: {
+		tier: "(OU)",
+	},
+	enerwraith: {
+		tier: "(OU)",
+	},
+	infestalk: {
+		tier: "(OU)",
+	},
+	impharie: {
+		tier: "(OU)",
+	},
+	assdos: {
+		tier: "(OU)",
+	},
+	lightenna: {
+		tier: "(OU)",
+	},
+	arsenatch: {
+		tier: "(OU)",
+	},
+	erinyoxic: {
+		tier: "(OU)",
+	},
+	laminight: {
+		tier: "(OU)",
+	},
+	decidueyemega: {
+		tier: "(OU)",
+	},
 	ivysaur: {
 		tier: "NFE",
 	},
