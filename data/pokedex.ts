@@ -18710,6 +18710,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Flying"],
 		requiredItem: "Deciduite",
 	},
+
+	// CAP Dex
+
 	syclar: {
 		num: -1,
 		name: "Syclar",
