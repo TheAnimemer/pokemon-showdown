@@ -10505,6 +10505,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 0.4,
 		weightkg: 5,
 		color: "White",
+		evos: ["Brevicectric"],
 		eggGroups: ["Field"],
 	},
 	karrablast: {
@@ -18468,7 +18469,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Obsidislug",
 		types: ["Fire", "Dragon"],
 		baseStats: {hp: 110, atk: 50, def: 150, spa: 100, spd: 105, spe: 15},
-		abilities: {0: "Magma Armor", 1: "Flame Body"},
+		abilities: {0: "Magma Armor", 1: "Flame Body", H: "Shell Armor"},
 		heightm: 1.1,
 		weightkg: 345,
 		color: "Black",
@@ -18492,7 +18493,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Cormatose",
 		types: ["Ground", "Fairy"],
 		baseStats: {hp: 105, atk: 85, def: 85, spa: 85, spd: 85, spe: 85},
-		abilities: {0: "Pixelate", 1: "Magic Guard"},
+		abilities: {0: "Pixilate", 1: "Magic Guard"},
 		heightm: 3.5,
 		weightkg: 739.4,
 		color: "Gray",
@@ -18520,9 +18521,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Field"],
 	},
-	dodogama: {
+	bakurana: {
 		num: 1031,
-		name: "Dodogama",
+		name: "Bakurana",
 		types: ["Fire", "Ground"],
 		baseStats: {hp: 116, atk: 75, def: 77, spa: 75, spd: 92, spe: 55},
 		abilities: {0: "Unaware", 1: "Earth Eater"},
@@ -18542,9 +18543,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Dragon"],
 	},
-	gammoth: {
+	ganmosu: {
 		num: 1032,
-		name: "Gammoth",
+		name: "Ganmosu",
 		types: ["Ice", "Ground"],
 		baseStats: {hp: 134, atk: 100, def: 108, spa: 62, spd: 102, spe: 49},
 		abilities: {0: "Snow Warning"},
@@ -18619,9 +18620,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Field"],
 	},
-	assdos: {
+	brevicectric: {
 		num: 1039,
-		name: "Assdos",
+		name: "Brevicectric",
 		types: ["Electric", "Flying"],
 		baseStats: {hp: 100, atk: 100, def: 85, spa: 70, spd: 85, spe: 130},
 		abilities: {0: "Static", 1: "Motor Drive"},
@@ -18632,9 +18633,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoLevel: 32,
 		eggGroups: ["Field"],
 	},
-	lightenna: {
+	raitenna: {
 		num: 1040,
-		name: "Lightenna",
+		name: "Raitenna",
 		types: ["Bug", "Electric"],
 		baseStats: {hp: 70, atk: 115, def: 55, spa: 115, spd: 55, spe: 115},
 		abilities: {0: "Electric Surge"},
