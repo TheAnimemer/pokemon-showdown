@@ -22044,6 +22044,44 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 
+	// AniCAP Moves
+
+	froststomp: {
+		num: 921,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Frost Stomp",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz',
+		},
+		target: "allAdjacent",
+		type: "Ice",
+		contestType: "Cool",
+	},
+	electricpiercer: {
+		num: 922,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Electric Piercer",
+		pp: 10,
+		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nonsky: 1, metronome: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Bug', type);
+		},
+		priority: 0,
+		secondary: null,
+		target: "any",
+		type: "Electric",
+		zMove: {basePower: 160},
+		contestType: "Tough",
+	},
+
 	// CAP moves
 
 	paleowave: {
