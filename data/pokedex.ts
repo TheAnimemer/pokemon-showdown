@@ -8435,6 +8435,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoType: "useItem",
 		evoItem: "Dawn Stone",
 		eggGroups: ["Fairy", "Mineral"],
+		otherFormes: ["Froslass-Mega"],
+		formeOrder: ["Froslass", "Froslass-Mega"],
 	},
 	rotom: {
 		num: 479,
@@ -12904,8 +12906,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Dartrix",
 		evoLevel: 34,
 		eggGroups: ["Flying"],
-		otherFormes: ["Decidueye-Hisui"],
-		formeOrder: ["Decidueye", "Decidueye-Hisui"],
+		otherFormes: ["Decidueye-Mega", "Decidueye-Hisui"],
+		formeOrder: ["Decidueye", "Decidueye-Mega", "Decidueye-Hisui"],
 	},
 	decidueyehisui: {
 		num: 724,
@@ -18715,6 +18717,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 97,
 		color: "Purple",
 		eggGroups: ["Undiscovered"],
+	},
+	froslassmega: {
+		num: 478,
+		name: "Froslass-Mega",
+		baseSpecies: "Froslass",
+		forme: "Mega",
+		types: ["Ice", "Ghost"],
+		baseStats: {hp: 70, atk: 80, def: 80, spa: 130, spd: 80, spe: 140},
+		abilities: {0: "Slush Rush"},
+		heightm: 2.4,
+		weightkg: 40,
+		color: "White",
+		eggGroups: ["Fairy", "Mineral"],
+		requiredItem: "Froslassite",
 	},
 
 	// CAP Dex
