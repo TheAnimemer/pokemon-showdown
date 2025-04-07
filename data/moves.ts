@@ -22065,7 +22065,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 	// AniCAP Moves
 
 	froststomp: {
-		num: 921,
+		num: -1001,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
@@ -22082,7 +22082,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Cool",
 	},
 	electricpiercer: {
-		num: 922,
+		num: -1002,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
@@ -22099,6 +22099,61 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {basePower: 160},
 		contestType: "Tough",
 	},
+	bigshot: {
+		num: -1003,
+		accuracy: 100,
+		basePower: 70,
+		category: "Special",
+		name: "Big Shot",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		type: "Fairy",
+		target: "normal",
+		contestType: "Cool",
+	
+		// Custom mechanic: ramping power
+		onModifyMove(move, attacker, defender) {
+			if (!attacker.volatiles['bigshot']) {
+				attacker.volatiles['bigshot'] = {counter: 1};
+			} else {
+				attacker.volatiles['bigshot'].counter = Math.min(attacker.volatiles['bigshot'].counter + 1, 6);
+			}
+		},
+		onBasePower(basePower, pokemon) {
+			const counter = pokemon.volatiles['bigshot']?.counter || 1;
+			// 10% boost per consecutive use, max 50%
+			const boost = 1 + 0.1 * (counter - 1);
+			return this.chainModify(boost);
+		},
+		onMoveFail(target, source, move) {
+			if (source.volatiles['bigshot']) {
+				delete source.volatiles['bigshot'];
+			}
+		},
+		onAfterMove(pokemon, target, move) {
+			if (move.id !== 'bigshot' && pokemon.volatiles['bigshot']) {
+				delete pokemon.volatiles['bigshot'];
+			}
+		},	
+	},
+	blastpuke: {
+		num: -1004,
+		accuracy: 100,
+		basePower: 60,
+		category: "Special",
+		name: "Blast Puke",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		type: "Fire",
+		target: "normal",
+		contestType: "Tough",
+		secondary: {
+			chance: 100,
+			volatileStatus: 'blastblight',
+		},
+	},	
 
 	// CAP moves
 

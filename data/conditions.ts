@@ -892,4 +892,20 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
+	blastblight: {
+		noCopy: true,
+		duration: 4,
+		onResidual(pokemon) {
+			this.damage(pokemon.baseMaxhp / 8);
+		},
+		onStart(pokemon) {
+			this.add('-start', pokemon, 'Blastblight');
+		},
+		onEnd(pokemon) {
+			this.add('-end', pokemon, 'Blastblight');
+		},
+		onSwitchOut(pokemon) {
+			pokemon.removeVolatile('blastblight');
+		},
+	},
 };
