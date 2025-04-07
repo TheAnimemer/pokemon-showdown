@@ -18692,6 +18692,30 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Flying"],
 		requiredItem: "Deciduite",
 	},
+	gravesect: {
+		num: 1044,
+		name: "Gravesect",
+		types: ["Bug", "Ghost"],
+		baseStats: {hp: 80, atk: 125, def: 100, spa: 110, spd: 90, spe: 15},
+		abilities: {0: "Dry Skin", 1: "Infiltrator", H: "Insomnia"},
+		heightm: 1,
+		weightkg: 60,
+		color: "Red",
+		prevo: "Parasect",
+		evoLevel: 45,
+		eggGroups: ["Bug"],
+	},
+	shamarion: {
+		num: 1045,
+		name: "Shamarion",
+		types: ["Dark", "Fairy"],
+		baseStats: {hp: 96, atk: 81, def: 129, spa: 99, spd: 87, spe: 107},
+		abilities: {0: "Prankster", 1: "Power of Neo"},
+		heightm: 3.2,
+		weightkg: 97,
+		color: "Purple",
+		eggGroups: ["Undiscovered"],
+	},
 
 	// CAP Dex
 

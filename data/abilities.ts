@@ -5589,7 +5589,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Iron Shooter",
 		rating: 3,
-		num: -1,
+		num: -1001,
 	},
 	soothingstarlight: {
 		onUpdate(pokemon) {
@@ -5613,7 +5613,25 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		flags: {},
 		name: "Soothing Starlight",
 		rating: 3,
-		num: -2,
+		num: -1002,
+	},
+	powerofneo: {
+		onModifyDefPriority: 5,
+		onModifyDef(def, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 3) {
+				return this.chainModify(2);
+			}
+		},
+		onModifySpDPriority: 5,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.hp <= pokemon.maxhp / 3) {
+				return this.chainModify(2);
+			}
+		},
+		flags: {},
+		name: "Power of Neo",
+		rating: 3,
+		num: -1003,
 	},
 
 	// CAP
