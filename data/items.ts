@@ -7651,6 +7651,9 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 2,
 		isNonstandard: "Past",
 	},
+
+	// AniCAP Items 
+
 	deciduite: {
 		name: "Deciduite",
 		spritenum: 613,
@@ -7661,11 +7664,98 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: 901,
+		num: -1001,
 		gen: 6,
 		isNonstandard: "Past",
 	},
-
+	froslassite: {
+		name: "Froslassite",
+		spritenum: 623,
+		megaStone: "Froslass-Mega",
+		megaEvolves: "Froslass",
+		itemUser: ["Froslass"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1002,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	powersash: {
+		name: "Power Sash",
+		spritenum: 132,
+		fling: { basePower: 20 },
+		onBasePower(basePower, attacker, defender, move) {
+			// If already used, skip
+			if (attacker.volatiles['powersashused']) return;
+	
+			// Only apply to STAB moves
+			if (!attacker.getTypes().includes(move.type)) return;
+	
+			// Only apply if holding the item
+			if (!attacker.hasItem('powersash')) return;
+	
+			this.debug('Power Sash boost applied');
+			attacker.addVolatile('powersashused');
+			attacker.useItem();
+			// Normally STAB is 1.5×, Adaptability is 2.0× — we'll boost it to 2.0 or 2.5 accordingly
+			return this.chainModify(attacker.hasAbility('adaptability') ? 1.25 : 1.33); 
+		},
+		num: -1003,
+		gen: 9,
+	},	
+	megalite: {
+		name: "Megalite",
+		spritenum: 287,
+		fling: { basePower: 30 },
+		onModifyDefPriority: 1,
+		onModifyDef(def, pokemon) {
+			if (pokemon.canMegaEvo) {
+				return this.chainModify(1.3);
+			}
+		},
+		onModifySpDPriority: 1,
+		onModifySpD(spd, pokemon) {
+			if (pokemon.canMegaEvo) {
+				return this.chainModify(1.3);
+			}
+		},
+		num: -1004,
+		gen: 9,
+	},	
+	radioantenna: {
+		name: "Radio Antenna",
+		spritenum: 236,
+		fling: {
+			basePower: 60,
+			effect(pokemon, target) {
+				if (target && target.item) {
+					const item = target.item;
+					target.setItem('');
+					this.add('-enditem', target, item, '[Radio Antenna Fling]');
+				}
+			},
+		},
+		onAfterHit(target, source, move) {
+			if (move.flags['contact'] && target.item) {
+				const item = target.item;
+				target.setItem('');
+				this.add('-enditem', target, item, '[Radio Antenna Contact]');
+			}
+		},
+		onHit(target, source, move) {
+			if (move.flags['contact'] && source.item) {
+				const item = source.item;
+				source.setItem('');
+				this.add('-enditem', source, item, '[Radio Antenna Recoil]');
+			}
+		},
+		num: -1005,
+		gen: 9,
+	},
+	
+	
 	// CAP items
 
 	crucibellite: {
