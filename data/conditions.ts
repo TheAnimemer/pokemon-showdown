@@ -894,7 +894,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 	},
 	blastblight: {
 		noCopy: true,
-		duration: 4,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 8);
 		},

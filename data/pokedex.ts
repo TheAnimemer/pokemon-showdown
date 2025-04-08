@@ -1182,6 +1182,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		prevo: "Paras",
 		evoLevel: 24,
+		evos: ["Gravesect"],
 		eggGroups: ["Bug", "Grass"],
 	},
 	venonat: {
@@ -2674,6 +2675,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Mime Jr.",
 		evoType: "levelMove",
 		evoMove: "Mimic",
+		evos: ["Mime Sr."],
 		eggGroups: ["Human-Like"],
 		canHatch: true,
 		otherFormes: ["Mr. Mime-Galar"],
@@ -4371,6 +4373,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		prevo: "Slugma",
 		evoLevel: 38,
+		evos: ["Obsidislug"],
 		eggGroups: ["Amorphous"],
 	},
 	swinub: {
@@ -4880,8 +4883,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Grovyle",
 		evoLevel: 36,
 		eggGroups: ["Monster", "Dragon"],
-		otherFormes: ["Sceptile-Mega"],
-		formeOrder: ["Sceptile", "Sceptile-Mega"],
+		otherFormes: ["Sceptile-Mega", "Sceptile-Tanoso"],
+		formeOrder: ["Sceptile", "Sceptile-Mega", "Sceptile-Tanoso"],
 	},
 	sceptilemega: {
 		num: 254,
@@ -10868,6 +10871,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.1,
 		weightkg: 148,
 		color: "Blue",
+		evos: ["Cryoctagon"],
 		eggGroups: ["Mineral"],
 	},
 	shelmet: {
@@ -14640,7 +14644,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	zeraora: {
 		num: 807,
 		name: "Zeraora",
-		types: ["Electric"],
+		types: ["Electric", "Fighting"],
 		gender: "N",
 		baseStats: { hp: 88, atk: 112, def: 75, spa: 102, spd: 80, spe: 143 },
 		abilities: { 0: "Volt Absorb" },
@@ -15396,6 +15400,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Purple",
 		prevo: "Toxel",
 		evoLevel: 30,
+		evos: ["Galvatrox"],
 		eggGroups: ["Human-Like"],
 		otherFormes: ["Toxtricity-Low-Key"],
 		formeOrder: ["Toxtricity", "Toxtricity-Low-Key"],
@@ -18750,7 +18755,20 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Fairy", "Mineral"],
 		requiredItem: "Froslassite",
 	},
-
+	sceptiletanoso: {
+		num: 254,
+		name: "Sceptile-Tanoso",
+		baseSpecies: "Sceptile",
+		forme: "Tanoso",
+		types: ["Dragon", "Electric"],
+		baseStats: {hp: 65, atk: 110, def: 80, spa: 85, spd: 68, spe: 122},
+		abilities: {0: "Lightning Rod", 1: "Tough Claws"},
+		heightm: 1.7,
+		weightkg: 52.2,
+		color: "Yellow",
+		eggGroups: ["Dragon"],
+	},
+	
 	// CAP Dex
 
 	syclar: {
