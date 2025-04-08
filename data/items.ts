@@ -7598,7 +7598,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1001,
-		gen: 6,
+		gen: 7,
 		isNonstandard: "Past",
 	},
 	froslassite: {
@@ -7687,7 +7687,58 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1005,
 		gen: 9,
 	},
-	
+	callingcard: {
+		name: "Calling Card",
+		spritenum: 387,
+		fling: { basePower: 10 },
+		onSwitchOut(pokemon) {
+			if (!pokemon.isActive || pokemon.hp <= 0) return;
+			const foe = pokemon.side.foe.active[0];
+			if (foe && foe.isActive && !foe.fainted && !foe.volatiles['taunt']) {
+				this.add('-item', pokemon, 'Calling Card');
+				foe.addVolatile('taunt', pokemon);
+				pokemon.useItem();
+			}
+		},
+		num: -1006,
+		gen: 9,
+	},	
+	ejectorboots: {
+		name: "Ejector Boots",
+		spritenum: 715,
+		fling: { basePower: 30 },
+		onResidualOrder: 29,
+		onResidual(pokemon) {
+			if (
+				pokemon.volatiles['confusion'] ||
+				pokemon.volatiles['taunt'] ||
+				pokemon.volatiles['infatuation'] ||
+				pokemon.volatiles['encore'] ||
+				pokemon.volatiles['disable']
+			) {
+				if (this.canSwitch(pokemon.side)) {
+					this.add('-activate', pokemon, 'item: Ejector Boots');
+					pokemon.switchFlag = true;
+				}
+			}
+		},
+		num: -1007,
+		gen: 9,
+	},	
+	ackleberry: {
+		name: "Ackle Berry",
+		spritenum: 262,
+		fling: { basePower: 10 },
+		onSwitchOut(pokemon) {
+			if (pokemon.hp < pokemon.maxhp && pokemon.hasItem('ackleberry')) {
+				this.heal(pokemon.baseMaxhp / 3, pokemon);
+				this.add('-useitem', pokemon, 'Ackle Berry');
+				pokemon.useItem();
+			}
+		},
+		num: -1008,
+		gen: 9,
+	},
 	
 	// CAP items
 
