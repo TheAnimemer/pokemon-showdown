@@ -5637,6 +5637,26 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -1003,
 	},
+	smolderingend: {
+		onModifyAtkPriority: 5,
+		onModifyAtk(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Smoldering End boost');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(atk, attacker, defender, move) {
+			if (move.type === 'Fire') {
+				this.debug('Smoldering End boost');
+				return this.chainModify(1.5);
+			}
+		},
+		flags: {},
+		name: "Smoldering End",
+		rating: 3.5,
+		num: -1004,
+	},
 
 	// CAP
 
