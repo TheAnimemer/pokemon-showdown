@@ -8173,6 +8173,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		evoItem: "Razor Claw",
 		evoCondition: "at night",
 		eggGroups: ["Field"],
+		otherFormes: ["Weavile-Tanoso"],
+		formeOrder: ["Weavile", "Weavile-Tanoso"],
 	},
 	magnezone: {
 		num: 462,
@@ -18803,6 +18805,19 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 110,
 		color: "Gray",
 		eggGroups: ["Field"],
+	},
+	weaviletanoso: {
+		num: 461,
+		name: "Weavile-Tanoso",
+		baseSpecies: "Weavile",
+		forme: "Tanoso",
+		types: ["Ghost", "Rock"],
+		baseStats: {hp: 70, atk: 65, def: 45, spa: 120, spd: 80, spe: 125},
+		abilities: {0: "Fossilize"},
+		heightm: 1,
+		weightkg: 21.7,
+		color: "Brown",
+		eggGroups: ["Monster"],
 	},
 	
 	// CAP Dex
