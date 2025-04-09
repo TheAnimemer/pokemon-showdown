@@ -22156,6 +22156,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Electric",
 		contestType: "Tough",
 	},
+	octuplefrost: {
+		num: -1006,
+		accuracy: 95,
+		basePower: 15,
+		category: "Special",
+		name: "Octuple Frost",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		multihit: 8,
+		multiaccuracy: true,
+		secondary: null,
+		target: "normal",
+		type: "Ice",
+	},
 
 	// CAP moves
 
