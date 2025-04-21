@@ -7739,6 +7739,34 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1008,
 		gen: 9,
 	},
+	sceptilitet: {
+		name: "Sceptilite-T",
+		spritenum: 596,
+		megaStone: "Sceptile-Tanoso-Mega",
+		megaEvolves: "Sceptile-Tanoso",
+		itemUser: ["Sceptile-Tanoso"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1009,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	magnezite: {
+		name: "Magnezite",
+		spritenum: 621,
+		megaStone: "Magnezone-Mega",
+		megaEvolves: "Magnezone",
+		itemUser: ["Magnezone"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1009,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 	
 	// CAP items
 
