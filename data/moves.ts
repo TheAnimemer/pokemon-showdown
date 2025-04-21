@@ -22189,6 +22189,46 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Ice",
 	},
+	soaringsparkle: {
+		num: -1007,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Soaring Sparkle",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		onBasePower(basePower, source) {
+			if (this.field.isTerrain('mistyterrain') && source.isGrounded()) {
+				this.debug('terrain buff');
+				return this.chainModify(1.5);
+			}
+		},
+		onModifyMove(move, source, target) {
+			if (this.field.isTerrain('mistyterrain') && source.isGrounded()) {
+				move.target = 'allAdjacentFoes';
+			}
+		},
+		secondary: null,
+		target: "normal",
+		type: "Fairy",
+	},
+	rushinglance: {
+		num: -1008,
+		accuracy: 100,
+		basePower: 35,
+		category: "Physical",
+		name: "Rushing Lance",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		multihit: 3,
+		secondary: null,
+		target: "normal",
+		type: "Steel",
+		zMove: {basePower: 180},
+		contestType: "Clever",
+	},
 
 	// CAP moves
 
