@@ -7763,7 +7763,49 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1009,
+		num: -1010,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	delphoxitet: {
+		name: "Delphoxite-T", 
+		spritenum: 587,
+		megaStone: "Delphox-Tanoso-Mega",
+		megaEvolves: "Delphox-Tanoso",
+		itemUser: ["Delphox-Tanoso"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1011,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	primarinite: {
+		name: "Primarinite", 
+		spritenum: 587,
+		megaStone: "Primarina-Mega",
+		megaEvolves: "Primarina",
+		itemUser: ["Primarina"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1012,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	incineroarite: {
+		name: "Incineroarite", 
+		spritenum: 591,
+		megaStone: "Incineroar-Mega",
+		megaEvolves: "Incineroar",
+		itemUser: ["Incineroar"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1013,
 		gen: 6,
 		isNonstandard: "Past",
 	},

@@ -22211,6 +22211,21 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: {basePower: 180},
 		contestType: "Clever",
 	},
+	makeshiftbreaker: {
+		num: -1009,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Makeshift Breaker",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		critRatio: 3,
+		secondary: null,
+		target: "normal",
+		type: "Ground",
+		contestType: "Cool",
+	},
 
 	// CAP moves
 
