@@ -22226,6 +22226,20 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Ground",
 		contestType: "Cool",
 	},
+	plasmablade: {
+		num: -1010,
+		accuracy: 95,
+		basePower: 75,
+		category: "Physical",
+		name: "Plasma Blade",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1, slicing: 1},
+		secondary: null,
+		target: "normal",
+		type: "Electric",
+		contestType: "Cool",
+	},
 
 	// CAP moves
 
