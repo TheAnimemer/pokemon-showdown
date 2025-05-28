@@ -18882,7 +18882,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		forme: "Tanoso",
 		types: ["Steel", "Flying"],
 		baseStats: {hp: 85, atk: 110, def: 90, spa: 82, spd: 83, spe: 75},
-		abilities: {0: "Weak Armor", H: "Filter"},
+		abilities: {0: "Weak Armor", H: "Clear Body"},
 		heightm: 1.8,
 		weightkg: 123.8,
 		color: "White",
