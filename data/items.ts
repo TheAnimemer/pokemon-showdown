@@ -7837,6 +7837,34 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
+	regidragite: {
+		name: "Regidragite", 
+		spritenum: 589,
+		megaStone: "Regidrago-Mega",
+		megaEvolves: "Regidrago",
+		itemUser: ["Regidrago"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1016,
+		gen: 6,
+		isNonstandard: "Past",
+	},
+	zangoosite: {
+		name: "Zangoosite", 
+		spritenum: 622,
+		megaStone: "Zangoose-Mega",
+		megaEvolves: "Zangoose",
+		itemUser: ["Zangoose"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1017,
+		gen: 6,
+		isNonstandard: "Past",
+	},
 
 	// CAP items
 
