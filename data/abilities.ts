@@ -5723,6 +5723,20 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
   		rating: 4,
   		num: -1008,
 	},
+	hugeguard: {
+  		onSourceModifyDamage(damage, source, target, move) {
+    		const effectiveness = this.dex.getEffectiveness(move, target);
+    		if (effectiveness < 0) {
+      			this.debug("Huge Guard weakens resisted hit");
+      			return this.chainModify(0.5);
+    		}
+  		},
+		flags: {},
+		name: "Huge Guard",
+  		rating: 3,
+  		num: -1009, 
+	},
+
 
 
 	// CAP
