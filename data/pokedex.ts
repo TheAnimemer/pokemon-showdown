@@ -18484,7 +18484,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	// AniCAP Dex
 
 	obsidislug: {
-		num: 1026,
+		num: -1001,
 		name: "Obsidislug",
 		types: ["Fire", "Dragon"],
 		baseStats: {hp: 110, atk: 50, def: 150, spa: 100, spd: 105, spe: 15},
@@ -18497,7 +18497,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Dragon"],
 	},
 	chaynzor: {
-		num: 1027,
+		num: -1002,
 		name: "Chaynzor",
 		types: ["Steel", "Normal"],
 		baseStats: {hp: 91, atk: 130, def: 110, spa: 80, spd: 65, spe: 45},
@@ -18508,7 +18508,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	cormatose: {
-		num: 1028,
+		num: -1003,
 		name: "Cormatose",
 		types: ["Ground", "Fairy"],
 		baseStats: {hp: 105, atk: 85, def: 85, spa: 85, spd: 85, spe: 85},
@@ -18519,7 +18519,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	fleaclipse: {
-		num: 1029,
+		num: -1004,
 		name: "Fleaclipse",
 		types: ["Bug", "Dark"],
 		baseStats: {hp: 75, atk: 115, def: 90, spa: 125, spd: 70, spe: 115},
@@ -18530,7 +18530,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	satyralpa: {
-		num: 1030,
+		num: -1005,
 		name: "Satyralpa",
 		types: ["Grass", "Fighting"],
 		baseStats: {hp: 100, atk: 100, def: 120, spa: 94, spd: 65, spe: 76},
@@ -18541,7 +18541,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	bakurana: {
-		num: 1031,
+		num: -1006,
 		name: "Bakurana",
 		types: ["Fire", "Ground"],
 		baseStats: {hp: 116, atk: 75, def: 77, spa: 75, spd: 92, spe: 55},
@@ -18552,7 +18552,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Dragon"],
 	},
 	lizendro: {
-		num: 1031,
+		num: -1007,
 		name: "Lizendro",
 		types: ["Grass", "Dragon"],
 		baseStats: {hp: 100, atk: 120, def: 90, spa: 90, spd: 120, spe: 80},
@@ -18563,7 +18563,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Dragon"],
 	},
 	ganmosu: {
-		num: 1032,
+		num: -1008,
 		name: "Ganmosu",
 		types: ["Ice", "Ground"],
 		baseStats: {hp: 134, atk: 100, def: 108, spa: 62, spd: 102, spe: 49},
@@ -18574,7 +18574,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	saruglace: {
-		num: 1033,
+		num: -1009,
 		name: "Saruglace",
 		types: ["Ice", "Fighting"],
 		baseStats: {hp: 97, atk: 115, def: 77, spa: 62, spd: 71, spe: 105},
@@ -18585,7 +18585,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	scallywatt: {
-		num: 1034,
+		num: -1010,
 		name: "Scallywatt",
 		types: ["Water", "Electric"],
 		baseStats: {hp: 80, atk: 80, def: 105, spa: 90, spd: 110, spe: 65},
@@ -18596,7 +18596,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1"],
 	},
 	levireap: {
-		num: 1035,
+		num: -1011,
 		name: "Levireap",
 		types: ["Ghost", "Flying"],
 		baseStats: {hp: 80, atk: 60, def: 65, spa: 105, spd: 65, spe: 125},
@@ -18607,7 +18607,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	enerwraith: {
-		num: 1036,
+		num: -1012,
 		name: "Enerwraith",
 		types: ["Ghost", "Electric"],
 		baseStats: {hp: 75, atk: 105, def: 80, spa: 95, spd: 80, spe: 110},
@@ -18618,7 +18618,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	infestalk: {
-		num: 1037,
+		num: -1013,
 		name: "Infestalk",
 		types: ["Bug", "Grass"],
 		baseStats: {hp: 99, atk: 85, def: 130, spa: 50, spd: 101, spe: 65},
@@ -18629,7 +18629,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 	},
 	impharie: {
-		num: 1038,
+		num: -1014,
 		name: "Impharie",
 		types: ["Fairy", "Fire"],
 		baseStats: {hp: 75, atk: 90, def: 80, spa: 115, spd: 90, spe: 95},
@@ -18640,7 +18640,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	brevicectric: {
-		num: 1039,
+		num: -1015,
 		name: "Brevicectric",
 		types: ["Electric", "Flying"],
 		baseStats: {hp: 100, atk: 100, def: 85, spa: 70, spd: 85, spe: 130},
@@ -18653,7 +18653,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	raitenna: {
-		num: 1040,
+		num: -1016,
 		name: "Raitenna",
 		types: ["Bug", "Electric"],
 		baseStats: {hp: 70, atk: 115, def: 55, spa: 115, spd: 55, spe: 115},
@@ -18664,7 +18664,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	arsenatch: {
-		num: 1041,
+		num: -1017,
 		name: "Arsenatch",
 		types: ["Dark", "Fighting"],
 		baseStats: {hp: 70, atk: 113, def: 80, spa: 90, spd: 80, spe: 118},
@@ -18675,7 +18675,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	erinyoxic: {
-		num: 1042,
+		num: -1018,
 		name: "Erinyoxic",
 		types: ["Poison", "Dragon"],
 		baseStats: {hp: 95, atk: 90, def: 105, spa: 105, spd: 85, spe: 105},
@@ -18686,7 +18686,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Field"],
 	},
 	laminight: {
-		num: 1043,
+		num: -1019,
 		name: "Laminight",
 		types: ["Dark", "Poison"],
 		baseStats: {hp: 104, atk: 70, def: 110, spa: 98, spd: 103, spe: 40},
@@ -18712,7 +18712,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Deciduite",
 	},
 	gravesect: {
-		num: 1044,
+		num: -1020,
 		name: "Gravesect",
 		types: ["Bug", "Ghost"],
 		baseStats: {hp: 80, atk: 125, def: 100, spa: 110, spd: 90, spe: 15},
@@ -18725,7 +18725,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 	},
 	shamarion: {
-		num: 1045,
+		num: -1021,
 		name: "Shamarion",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 96, atk: 81, def: 129, spa: 99, spd: 87, spe: 107},
@@ -18765,7 +18765,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Sceptile-Tanoso", "Sceptile-Tanoso-Mega"],
 	},
 	cryoctagon: {
-		num: 1046,
+		num: -1022,
 		name: "Cryoctagon",
 		types: ["Ice"],
 		baseStats: {hp: 85, atk: 40, def: 80, spa: 105, spd: 140, spe: 95},
@@ -18779,7 +18779,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 	},
 	ragik: {
-		num: 1047,
+		num: -1023,
 		name: "Ragik",
 		types: ["Bug", "Poison"],
 		baseStats: {hp: 78, atk: 130, def: 55, spa: 94, spd: 55, spe: 126},
@@ -18790,7 +18790,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Bug"],
 	},
 	pallapad: {
-		num: 1048,
+		num: -1024,
 		name: "Pallapad",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 125, atk: 95, def: 73, spa: 77, spd: 85, spe: 77},
@@ -18870,7 +18870,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Flying"],
 	},
 	galvatrox: {
-		num: 1049,
+		num: -1025,
 		name: "Galvatrox",
 		types: ["Electric", "Poison"],
 		baseStats: {hp: 85, atk: 90, def: 76, spa: 124, spd: 76, spe: 97},
@@ -18883,7 +18883,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Human-Like"],
 	},
 	spirition: {
-		num: 1050,
+		num: -1026,
 		name: "Spirition",
 		types: ["Ghost", "Fighting"],
 		baseStats: {hp: 91, atk: 90, def: 72, spa: 108, spd: 90, spe: 129},
@@ -18909,7 +18909,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Delphoxite-T",
 	},
 	sinester: {
-		num: 1051,
+		num: -1027,
 		name: "Sinester",
 		types: ["Dark"],
 		baseStats: {hp: 95, atk: 120, def: 95, spa: 55, spd: 115, spe: 120},
@@ -18920,7 +18920,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	witheroot: {
-		num: 1052,
+		num: -1028,
 		name: "Witheroot",
 		types: ["Grass", "Poison"],
 		baseStats: {hp: 95, atk: 120, def: 85, spa: 100, spd: 85, spe: 97},
@@ -18944,7 +18944,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Dragon"],
 	},
 	hessifang: {
-		num: 1053,
+		num: -1029,
 		name: "Hessifang",
 		types: ["Dark", "Fighting"],
 		baseStats: {hp: 90, atk: 130, def: 80, spa: 50, spd: 77, spe: 100},
@@ -18983,7 +18983,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Incineroarite",
 	},
 	shenmiside: {
-		num: 1054,
+		num: -1030,
 		name: "Shenmiside",
 		types: ["Ghost", "Steel"],
 		baseStats: {hp: 95, atk: 70, def: 95, spa: 70, spd: 115, spe: 80},
@@ -18994,7 +18994,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	diatridon: {
-		num: 1055,
+		num: -1031,
 		name: "Diatridon",
 		types: ["Water", "Steel"],
 		baseStats: {hp: 100, atk: 100, def: 85, spa: 100, spd: 95, spe: 120},
@@ -19005,7 +19005,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Water 1"],
 	},
 	gloyster: {
-		num: 1056,
+		num: -1032,
 		name: "Gloyster",
 		types: ["Water", "Ground"],
 		baseStats: {hp: 50, atk: 95, def: 180, spa: 85, spd: 45, spe: 70},
@@ -19029,7 +19029,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Flying"],
 	},
 	basalalt: {
-		num: 1057,
+		num: -1033,
 		name: "Basalalt",
 		types: ["Grass", "Rock"],
 		baseStats: {hp: 106, atk: 53, def: 111, spa: 43, spd: 94, spe: 65},
@@ -19060,11 +19060,58 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Normal"],
 		baseStats: {hp: 110, atk: 115, def: 125, spa: 110, spd: 125, spe: 30},
 		abilities: {0: "Oblivious"},
-		heightm: 1.7,
-		weightkg: 200,
+		heightm: 3,
+		weightkg: 260,
 		color: "Red",
 		eggGroups: ["Monster"],
 		requiredItem: "Lickilickite",
+	},
+	umbra: {
+		num: -1034,
+		name: "Umbra",
+		types: ["Dark", "Psychic"],
+		baseStats: {hp: 80, atk: 121, def: 60, spa: 121, spd: 84, spe: 84},
+		abilities: {0: "Psychic Surge", 1: "Weak Armor", H: "Adaptability"},
+		heightm: 1.5,
+		weightkg: 120,
+		color: "Pink",
+		eggGroups: ["Undiscovered"],
+	},
+	regielekimega: {
+		num: 894,
+		name: "Regieleki-Mega",
+		baseSpecies: "Regieleki",
+		forme: "Mega",
+		types: ["Electric"],
+		baseStats: {hp: 80, atk: 150, def: 25, spa: 150, spd: 25, spe: 250},
+		abilities: {0: "Electric Surge"},
+		heightm: 3,
+		weightkg: 0.1,
+		color: "Yellow",
+		eggGroups: ["Undiscovered"],
+		requiredItem: "Regielekite",
+	},
+	stratoll: {
+		num: -1035,
+		name: "Stratoll",
+		types: ["Rock", "Flying"],
+		baseStats: {hp: 100, atk: 108, def: 142, spa: 45, spd: 45, spe: 80},
+		abilities: {0: "Mold Breaker", 1: "Cloud Nine", H: "Huge Guard"},
+		heightm: 24,
+		weightkg: 955,
+		color: "Pink",
+		eggGroups: ["Mineral", "Water 3"],
+	},
+	scaldra: {
+		num: -1036,
+		name: "Scaldra",
+		types: ["Water", "Fire"],
+		baseStats: {hp: 75, atk: 117, def: 70, spa: 86, spd: 70, spe: 122},
+		abilities: {0: "Defiant", H: "Dazzling"},
+		heightm: 0.5,
+		weightkg: 40,
+		color: "Blue",
+		eggGroups: ["Water 2"],
 	},
 	
 	// CAP Dex
