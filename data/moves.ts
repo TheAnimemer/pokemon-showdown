@@ -22088,7 +22088,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		category: "Physical",
 		name: "Electric Piercer",
 		pp: 10,
-		flags: {contact: 1, protect: 1, mirror: 1, gravity: 1, distance: 1, nonsky: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
 		onEffectiveness(typeMod, target, type, move) {
 			return typeMod + this.dex.getEffectiveness('Bug', type);
 		},
@@ -22319,7 +22319,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 95,
 		category: "Physical",
 		name: "Boiling Lash",
-		pp: 16,
+		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
 		secondary: {
@@ -22332,8 +22332,117 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		target: "normal",
 		type: "Water",
 		contestType: "Tough",
-},
-
+	},
+	sinfulnectar: {
+		num: -1013,
+		accuracy: 100,
+		basePower: 75,
+		category: "Special",
+		name: "Sinful Nectar",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, bypasssub: 1, metronome: 1},
+		secondary: {
+			chance: 100,
+			volatileStatus: 'healblock',
+		},
+		target: "normal",
+		type: "Water",
+	},
+	hedge: {
+		num: -1014,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		name: "Hedge",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		secondary: {
+			chance: 50,
+			self: {
+				boosts: {
+					def: 1,
+				},
+			},
+		},
+		target: "normal",
+		type: "Rock",
+	},
+	aerocutter: {
+		num: -1015,
+		accuracy: 100,
+		basePower: 100,
+		category: "Physical",
+		name: "Photon Geyser",
+		pp: 5,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		onModifyMove(move, pokemon) {
+			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
+		},
+		secondary: null,
+		target: "normal",
+		type: "Flying",
+		contestType: "Cool",
+	},
+	pixiequake: {
+		num: -1016,
+		accuracy: 100,
+		basePower: 95,
+		category: "Physical",
+		name: "Pixie Quake",
+		pp: 10,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		onEffectiveness(typeMod, target, type, move) {
+			return typeMod + this.dex.getEffectiveness('Ground', type);
+		},
+		priority: 0,
+		secondary: null,
+		target: "any",
+		type: "Fairy",
+		contestType: "Tough",
+	},
+	skinbind: {
+		num: -1017,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Skinbind",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onHit(target, source, move) {
+			if (target.volatiles['substitute']) {
+				const substituteHP = target.volatiles['substitute'].hp;
+				target.removeVolatile('substitute');
+				this.heal(substituteHP, source, source);
+			}
+		},
+		target: "normal",
+		type: "Dragon",
+		contestType: "Tough",
+	},
+	assimilate: {
+		num: -1018,
+		accuracy: 100,
+		basePower: 85,
+		category: "Special",
+		name: "Assimilate",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1, metronome: 1},
+		onHit(target, source, move) {
+			if (target.volatiles['substitute']) {
+				const substituteHP = target.volatiles['substitute'].hp;
+				target.removeVolatile('substitute');
+				this.heal(substituteHP, source, source);
+			}
+		},
+		target: "normal",
+		type: "Fairy",
+		contestType: "Beautiful",
+	},
 
 	// CAP moves
 

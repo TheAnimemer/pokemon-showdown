@@ -5736,7 +5736,55 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
   		rating: 3,
   		num: -1009, 
 	},
+	festeringcloak: {
+  		onStart(pokemon) {
+    		// Initialize storage for this ability instance
+    		pokemon.volatiles['festeringcloak'] = { switchedIn: new Set<Pokemon>() };
+  		},
 
+  		onSwitchIn(pokemon) {
+    		// Check if the active foe has Festering Cloak
+    		for (const active of pokemon.side.foe.active) {
+      			if (active?.ability === 'festeringcloak' && active.volatiles['festeringcloak']) {
+        			active.volatiles['festeringcloak'].switchedIn.add(pokemon);
+      			}
+    		}
+  		},
+
+  		onResidualOrder: 27, // Same as Rough Skin/Iron Barbs
+  		onResidual(pokemon) {
+    		const effect = pokemon.volatiles['festeringcloak'];
+    		if (!effect || !effect.switchedIn) return;
+
+    		for (const target of effect.switchedIn) {
+      			if (!target.fainted) {
+        			this.damage(target.maxhp / 12, target, pokemon);
+        			this.add('-message', `${target.name} suffered from the Festering Cloak!`);
+      			}
+    		}
+
+    		// Reset the tracker each turn
+    		effect.switchedIn.clear();
+  		},
+		flags: {},
+  		name: "Festering Cloak",
+  		rating: 3,
+  		num: -1010,
+	},
+	remedialooze: {
+  		onSwitchOut(pokemon) {
+    		for (const foe of pokemon.side.foe.active) {
+      			if (foe?.isActive && foe.ability === 'remedialooze' && !foe.fainted) {
+        			this.heal(foe.maxhp / 4, foe, foe);
+        			this.add('-message', `${foe.name} absorbed nutrients with Remedial Ooze!`);
+      			}
+    		}
+  		},
+		flags: {},
+  		name: "Remedial Ooze",
+  		rating: 3,
+  		num: -1011,
+	},
 
 
 	// CAP
