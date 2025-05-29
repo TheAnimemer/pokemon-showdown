@@ -7665,8 +7665,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1001,
-		gen: 7,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	froslassite: {
 		name: "Froslassite",
@@ -7679,8 +7678,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1002,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	powersash: {
 		name: "Power Sash",
@@ -7817,8 +7815,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1009,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	magnezite: {
 		name: "Magnezite",
@@ -7831,8 +7828,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1010,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	delphoxitet: {
 		name: "Delphoxite-T", 
@@ -7845,8 +7841,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1011,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	primarinite: {
 		name: "Primarinite", 
@@ -7859,8 +7854,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1012,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	incineroarite: {
 		name: "Incineroarite", 
@@ -7873,8 +7867,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1013,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	lickilickite: {
 		name: "Lickilickite", 
@@ -7887,8 +7880,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1014,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	regielekite: {
 		name: "Regielekite", 
@@ -7901,8 +7893,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1015,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	regidragite: {
 		name: "Regidragite", 
@@ -7915,8 +7906,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1016,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 	zangoosite: {
 		name: "Zangoosite", 
@@ -7929,8 +7919,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1017,
-		gen: 6,
-		isNonstandard: "Past",
+		gen: 9,
 	},
 
 	// CAP items
