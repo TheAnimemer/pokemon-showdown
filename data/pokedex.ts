@@ -18962,9 +18962,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Dragon"],
 	},
-	hessifang: {
+	hessifeng: {
 		num: -1029,
-		name: "Hessifang",
+		name: "Hessifeng",
 		types: ["Dark", "Fighting"],
 		baseStats: {hp: 90, atk: 130, def: 80, spa: 50, spd: 77, spe: 100},
 		abilities: {0: "Dark Aura", H: "Iron Fist"},
