@@ -30,7 +30,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	dodogama: {
+	bakurana: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
@@ -40,7 +40,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	gammoth: {
+	ganmosu: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
@@ -75,12 +75,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	assdos: {
+	brevicectric: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	lightenna: {
+	raitenna: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
@@ -105,7 +105,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DOU",
 		natDexTier: "OU",
 	},
-	gravsect: {
+	gravesect: {
 		tier: "OU",
 		doublesTier: "DOU",
 		natDexTier: "OU",
