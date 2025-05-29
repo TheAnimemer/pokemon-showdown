@@ -22111,31 +22111,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		target: "normal",
 		contestType: "Cool",
-	
-		// Custom mechanic: ramping power
+		// Consecutive use increases power up to 50%
 		onModifyMove(move, attacker, defender) {
-			if (!attacker.volatiles['bigshot']) {
-				attacker.volatiles['bigshot'] = {counter: 1};
-			} else {
-				attacker.volatiles['bigshot'].counter = Math.min(attacker.volatiles['bigshot'].counter + 1, 6);
-			}
+			attacker.addVolatile('bigshot');
 		},
 		onBasePower(basePower, pokemon) {
 			const counter = pokemon.volatiles['bigshot']?.counter || 1;
-			// 10% boost per consecutive use, max 50%
-			const boost = 1 + 0.1 * (counter - 1);
+			const boost = 1 + 0.1 * (counter - 1); // 10% per stack, max 50%
 			return this.chainModify(boost);
 		},
 		onMoveFail(target, source, move) {
 			if (source.volatiles['bigshot']) {
-				delete source.volatiles['bigshot'];
+				source.removeVolatile('bigshot');
 			}
 		},
 		onAfterMove(pokemon, target, move) {
 			if (move.id !== 'bigshot' && pokemon.volatiles['bigshot']) {
-				delete pokemon.volatiles['bigshot'];
+				pokemon.removeVolatile('bigshot');
 			}
-		},	
+		},
 	},
 	blastpuke: {
 		num: -1004,
