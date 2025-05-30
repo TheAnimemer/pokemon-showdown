@@ -18869,7 +18869,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		gen: 6,
 	},
 	delphoxtanoso: {
-		num: 655,
+		num: -1501,
 		name: "Delphox-Tanoso",
 		baseSpecies: "Delphox-Tanoso",
 		forme: "Tanoso",
@@ -18925,7 +18925,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Undiscovered"],
 	},
 	delphoxtanosomega: {
-		num: 655,
+		num: -1501,
 		name: "Delphox-Tanoso-Mega",
 		baseSpecies: "Delphox-Tanoso",
 		forme: "Mega",
