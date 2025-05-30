@@ -7665,7 +7665,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1001,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	froslassite: {
 		name: "Froslassite",
@@ -7678,7 +7679,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1002,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	powersash: {
 		name: "Power Sash",
@@ -7815,7 +7817,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1009,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	magnezite: {
 		name: "Magnezite",
@@ -7828,7 +7831,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1010,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	delphoxitet: {
 		name: "Delphoxite-T", 
@@ -7841,11 +7845,12 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1011,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
-	quaquavilitet: {
-		name: "Quaquavalite-T", 
-		spritenum: 576,
+	quaquavalitet: {
+		name: "Quaquavalite-T",
+		spritenum: 578,
 		megaStone: "Quaquaval-Tanoso-Mega",
 		megaEvolves: "Quaquaval-Tanoso",
 		itemUser: ["Quaquaval-Tanoso"],
@@ -7854,7 +7859,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1012,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	primarinite: {
 		name: "Primarinite", 
@@ -7867,7 +7873,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1013,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	incineroarite: {
 		name: "Incineroarite", 
@@ -7880,7 +7887,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1014,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	lickilickite: {
 		name: "Lickilickite", 
@@ -7893,7 +7901,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1015,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	regielekite: {
 		name: "Regielekite", 
@@ -7906,7 +7915,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1016,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	regidragite: {
 		name: "Regidragite", 
@@ -7919,7 +7929,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1017,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 	zangoosite: {
 		name: "Zangoosite", 
@@ -7932,7 +7943,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			return true;
 		},
 		num: -1018,
-		gen: 9,
+		gen: 6,
+		isNonstandard: "Past",
 	},
 
 	// CAP items

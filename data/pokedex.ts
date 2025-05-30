@@ -18729,6 +18729,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Flying"],
 		requiredItem: "Deciduite",
+		gen: 6,
 	},
 	gravesect: {
 		num: -1020,
@@ -18767,6 +18768,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Fairy", "Mineral"],
 		requiredItem: "Froslassite",
+		gen: 6,
 	},
 	sceptiletanoso: {
 		num: 254,
@@ -18848,6 +18850,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Dragon"],
 		requiredItem: "Sceptilite-T",
+		gen: 6,
 	},
 	magnezonemega: {
 		num: 462,
@@ -18863,6 +18866,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Gray",
 		eggGroups: ["Mineral"],
 		requiredItem: "Magnezite",
+		gen: 6,
 	},
 	delphoxtanoso: {
 		num: 655,
@@ -18934,6 +18938,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Pink",
 		eggGroups: ["Field"],
 		requiredItem: "Delphoxite-T",
+		gen: 6,
 	},
 	sinester: {
 		num: -1027,
@@ -18994,6 +18999,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Blue",
 		eggGroups: ["Water 1", "Field"],
 		requiredItem: "Primarinite",
+		gen: 6,
 	},
 	incineroarmega: {
 		num: 727,
@@ -19008,6 +19014,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Field"],
 		requiredItem: "Incineroarite",
+		gen: 6,
 	},
 	shenmiside: {
 		num: -1030,
@@ -19054,6 +19061,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 230.3,
 		color: "White",
 		eggGroups: ["Flying"],
+		requiredItem: "Quaquavalite-T",
+		gen: 6,
 	},
 	basalalt: {
 		num: -1033,
@@ -19092,6 +19101,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Red",
 		eggGroups: ["Monster"],
 		requiredItem: "Lickilickite",
+		gen: 6,
 	},
 	umbra: {
 		num: -1034,
@@ -19117,6 +19127,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Yellow",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Regielekite",
+		gen: 6,
 	},
 	stratoll: {
 		num: -1035,
@@ -19164,6 +19175,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Green",
 		eggGroups: ["Undiscovered"],
 		requiredItem: "Regidragite",
+		gen: 6,
 	},
 	zangoosemega: {
 		num: 335,
@@ -19178,6 +19190,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "White",
 		eggGroups: ["Field"],
 		requiredItem: "Zangoosite",
+		gen: 6,
 	},
 	googoyle: {
 		num: -1038,
