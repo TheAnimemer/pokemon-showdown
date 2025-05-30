@@ -7843,6 +7843,19 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1011,
 		gen: 9,
 	},
+	quaquavilitet: {
+		name: "Quaquavalite-T", 
+		spritenum: 576,
+		megaStone: "Quaquaval-Tanoso-Mega",
+		megaEvolves: "Quaquaval-Tanoso",
+		itemUser: ["Quaquaval-Tanoso"],
+		onTakeItem(item, source) {
+			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
+			return true;
+		},
+		num: -1012,
+		gen: 9,
+	},
 	primarinite: {
 		name: "Primarinite", 
 		spritenum: 587,
@@ -7853,7 +7866,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1012,
+		num: -1013,
 		gen: 9,
 	},
 	incineroarite: {
@@ -7866,7 +7879,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1013,
+		num: -1014,
 		gen: 9,
 	},
 	lickilickite: {
@@ -7879,7 +7892,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1014,
+		num: -1015,
 		gen: 9,
 	},
 	regielekite: {
@@ -7892,7 +7905,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1015,
+		num: -1016,
 		gen: 9,
 	},
 	regidragite: {
@@ -7905,7 +7918,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1016,
+		num: -1017,
 		gen: 9,
 	},
 	zangoosite: {
@@ -7918,7 +7931,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;
 		},
-		num: -1017,
+		num: -1018,
 		gen: 9,
 	},
 
