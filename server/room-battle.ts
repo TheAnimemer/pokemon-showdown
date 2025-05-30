@@ -276,7 +276,7 @@ export class RoomBattleTimer {
 				// first request of a mid-turn request (U-turn or faint-switch)
 				this.isFirstRequest = false;
 				const addPerMidTurnRequest = Math.min(this.settings.addPerTurn, TICK_TIME);
-				this.battle.room.add(`||adding ${addPerMidTurnRequest} to each for mid turn request`);
+				this.battle.room.addRaw(`<!-- adding ${addPerMidTurnRequest} to each for mid turn request -->`);
 				for (const curPlayer of this.battle.players) {
 					curPlayer.secondsLeft += addPerMidTurnRequest;
 				}
