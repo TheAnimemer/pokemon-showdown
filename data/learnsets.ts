@@ -93978,6 +93978,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	bakurana: {
 		learnset: {
+			blastpuke: ["9M"],
 			spikes: ["9M"],
 			stealthrock: ["9M"],
 			slackoff: ["9M"],
@@ -95146,6 +95147,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	pallapad: {
 		learnset: {
+			toxic: ["9M"],
 			protect: ["9M"],
 			substitute: ["9M"],
 			rest: ["9M"],
@@ -95548,7 +95550,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			astonish: ["9M"],
 			detect: ["9M"],
 			confuseray: ["9M"],
-			faint: ["9M"],
+			feint: ["9M"],
 			lowsweep: ["9M"],
 			smokescreen: ["9M"],
 			leer: ["9M"],
@@ -95563,7 +95565,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	sinester: {
 		learnset: {
-			spadevolley: ["9M"],
+			shadevolley: ["9M"],
 			swordsdance: ["9M"],
 			crunch: ["9M"],
 			scaleshot: ["9M"],
@@ -95741,6 +95743,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	salamencetanoso: {
 		learnset: {
+			makeshiftbreaker: ["9M"],
 			protect: ["9M"],
 			substitute: ["9M"],
 			rest: ["9M"],
@@ -96593,7 +96596,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			toxic: ["9M"],
 			weatherball: ["9M"],
 			absorb: ["9M"],
-			acidspay: ["9M"],
+			acidspray: ["9M"],
 			assurance: ["9M"],
 			attract: ["9M"],
 			bide: ["9M"],
@@ -96941,6 +96944,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	ribbixie: {
 		learnset: {
+			earthquake: ["9M"],
 			pixiequake: ["9M"],
 			substitute: ["9M"],
 			protect: ["9M"],
@@ -96976,7 +96980,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			stoneedge: ["9M"],
 			rockslide: ["9M"],
 			waterfall: ["9M"],
-			acidspay: ["9M"],
+			acidspray: ["9M"],
 			afteryou: ["9M"],
 			amnesia: ["9M"],
 			bulldoze: ["9M"],
