@@ -302,7 +302,7 @@ export class RoomBattleTimer {
 			}
 		}
 
-		this.battle.room.add(`||adding ${addPerTurn} for new turn`);
+		this.battle.room.addRaw(`<!-- adding ${addPerTurn} for new turn -->`);
 		for (const player of this.battle.players) {
 			player.secondsLeft = Math.min(player.secondsLeft + addPerTurn, this.settings.starting);
 		}
