@@ -18871,7 +18871,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	delphoxtanoso: {
 		num: 655,
 		name: "Delphox-Tanoso",
-		baseSpecies: "Delphox",
+		baseSpecies: "Delphox-Tanoso",
 		forme: "Tanoso",
 		types: ["Fairy", "Normal"],
 		baseStats: {hp: 80, atk: 69, def: 67, spa: 120, spd: 97, spe: 101},
