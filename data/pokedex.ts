@@ -18876,6 +18876,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Pink",
 		eggGroups: ["Field"],
+		prevo: "Placeholder",
 		otherFormes: ["Delphox-Tanoso-Mega"],
 		formeOrder: ["Delphox-Tanoso", "Delphox-Tanoso-Mega"],
 	},
@@ -18891,6 +18892,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 123.8,
 		color: "White",
 		eggGroups: ["Flying"],
+		prevo: "Placeholder",
 		otherFormes: ["Quaquaval-Tanoso-Mega"],
 		formeOrder: ["Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"],
 	},
@@ -18921,7 +18923,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	delphoxtanosomega: {
 		num: 655,
 		name: "Delphox-Tanoso-Mega",
-		baseSpecies: "Delphox",
+		baseSpecies: "Delphox-Tanoso",
 		forme: "Mega",
 		types: ["Fairy", "Normal"],
 		genderRatio: {M: 0.5, F: 0.5},
@@ -19043,7 +19045,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	quaquavaltanosomega: {
 		num: 914,
 		name: "Quaquaval-Tanoso-Mega",
-		baseSpecies: "Quaquaval",
+		baseSpecies: "Quaquaval-Tanoso",
 		forme: "Mega",
 		types: ["Steel", "Flying"],
 		baseStats: {hp: 85, atk: 137, def: 100, spa: 90, spd: 102, spe: 111},
