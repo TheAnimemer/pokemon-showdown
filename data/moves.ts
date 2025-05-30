@@ -22437,6 +22437,25 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Fairy",
 		contestType: "Beautiful",
 	},
+	shadevolley: {
+		num: -1019,
+		accuracy: 100,
+		basePower: 25,
+		category: "Physical",
+		name: "Icicle Spear",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		multihit: [2, 5],
+		secondary: {
+			chance: 5,
+			volatileStatus: 'confusion',
+		},
+		target: "normal",
+		type: "Dark",
+		zMove: { basePower: 140 },
+		contestType: "Beautiful",
+	},
 
 	// CAP moves
 

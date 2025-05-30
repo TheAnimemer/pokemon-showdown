@@ -4884,8 +4884,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Grovyle",
 		evoLevel: 36,
 		eggGroups: ["Monster", "Dragon"],
-		otherFormes: ["Sceptile-Mega", "Sceptile-Tanoso", "Sceptile-Tanoso-Mega"],
-		formeOrder: ["Sceptile", "Sceptile-Mega", "Sceptile-Tanoso", "Sceptile-Tanoso-Mega"],
+		otherFormes: ["Sceptile-Mega", "Sceptile-Tanoso"],
+		formeOrder: ["Sceptile", "Sceptile-Mega", "Sceptile-Tanoso"],
 	},
 	sceptilemega: {
 		num: 254,
@@ -11618,8 +11618,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Braixen",
 		evoLevel: 36,
 		eggGroups: ["Field"],
-		otherFormes: ["Delphox-Tanoso", "Delphox-Tanoso-Mega"], 
-		formeOrder: ["Delphox", "Delphox-Tanoso", "Delphox-Tanoso-Mega"], 
+		otherFormes: ["Delphox-Tanoso"], 
+		formeOrder: ["Delphox", "Delphox-Tanoso"], 
 	},
 	froakie: {
 		num: 656,
@@ -16728,8 +16728,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Quaxwell",
 		evoLevel: 36,
 		eggGroups: ["Flying", "Water 1"],
-		otherFormes: ["Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"], 
-		formeOrder: ["Quaquaval", "Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"],  
+		otherFormes: ["Quaquaval-Tanoso"], 
+		formeOrder: ["Quaquaval", "Quaquaval-Tanoso"],  
 	},
 	lechonk: {
 		num: 915,
@@ -18876,6 +18876,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 39,
 		color: "Pink",
 		eggGroups: ["Field"],
+		otherFormes: ["Delphox-Tanoso-Mega"],
+		formeOrder: ["Delphox-Tanoso", "Delphox-Tanoso-Mega"],
 	},
 	quaquavaltanoso: {
 		num: 914,
@@ -18889,6 +18891,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 123.8,
 		color: "White",
 		eggGroups: ["Flying"],
+		otherFormes: ["Quaquaval-Tanoso-Mega"],
+		formeOrder: ["Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"],
 	},
 	galvatrox: {
 		num: -1025,
@@ -19160,7 +19164,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		requiredItem: "Regidragite",
 	},
 	zangoosemega: {
-		num: 895,
+		num: 335,
 		name: "Zangoose-Mega",
 		baseSpecies: "Zangoose",
 		forme: "Mega",

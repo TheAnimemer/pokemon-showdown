@@ -4833,7 +4833,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tapufini: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "OU",
+		natDexTier: "(OU)",
 	},
 	cosmog: {
 		tier: "LC",
@@ -5365,7 +5365,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	zamazentacrowned: {
 		tier: "Uber",
 		doublesTier: "DUber",
-		natDexTier: "Uber",
+		natDexTier: "(OU)",
 	},
 	eternatus: {
 		tier: "Uber",
