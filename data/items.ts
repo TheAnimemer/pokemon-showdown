@@ -7848,8 +7848,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 6,
 		isNonstandard: "Past",
 	},
-	quaquavalitet: {
-		name: "Quaquavalite-T",
+	quaquavalite: {
+		name: "Quaquavalite",
 		spritenum: 576,
 		megaStone: "Quaquaval-Tanoso-Mega",
 		megaEvolves: "Quaquaval-Tanoso",
