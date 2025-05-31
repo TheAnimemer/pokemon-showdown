@@ -7666,7 +7666,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -1001,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	froslassite: {
 		name: "Froslassite",
@@ -7680,7 +7679,6 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -1002,
 		gen: 6,
-		isNonstandard: "Past",
 	},
 	powersash: {
 		name: "Power Sash",
@@ -7709,16 +7707,28 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Megalite",
 		spritenum: 287,
 		fling: { basePower: 30 },
-		onModifyDefPriority: 1,
 		onModifyDef(def, pokemon) {
-			if (pokemon.canMegaEvo) {
-				return this.chainModify(1.3);
+			const species = pokemon.baseSpecies;
+			const forme = this.dex.species.get(species.name);
+			if (forme.otherFormes) {
+				for (const alt of forme.otherFormes) {
+					const altForme = this.dex.species.get(alt);
+					if (altForme.forme === 'Mega') {
+						return this.chainModify(1.3);
+					}
+				}
 			}
 		},
-		onModifySpDPriority: 1,
 		onModifySpD(spd, pokemon) {
-			if (pokemon.canMegaEvo) {
-				return this.chainModify(1.3);
+			const species = pokemon.baseSpecies;
+			const forme = this.dex.species.get(species.name);
+			if (forme.otherFormes) {
+				for (const alt of forme.otherFormes) {
+					const altForme = this.dex.species.get(alt);
+					if (altForme.forme === 'Mega') {
+						return this.chainModify(1.3);
+					}
+				}
 			}
 		},
 		num: -1004,
