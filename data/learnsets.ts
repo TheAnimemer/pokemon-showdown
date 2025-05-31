@@ -97271,6 +97271,12 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			storedpower: ["9M"],
 		},
 	},
+	placeholder: {
+		learnset: {
+			splash: ["9M"],
+			happyhour: ["9M"],
+		},
+	},
 
 	// CAP Learnsets
 

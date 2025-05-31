@@ -18781,7 +18781,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.7,
 		weightkg: 52.2,
 		color: "Yellow",
-		prevo: "placeholder",
+		prevo: "Placeholder",
 		evoLevel: 38,
 		eggGroups: ["Dragon"],
 		otherFormes: ["Sceptile-Tanoso-Mega"],
@@ -18834,6 +18834,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1,
 		weightkg: 21.7,
 		color: "Brown",
+		prevo: "Placeholder",
 		eggGroups: ["Monster"],
 	},
 	sceptiletanosomega: {
@@ -18973,6 +18974,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.8,
 		weightkg: 122,
 		color: "Gray",
+		prevo: "Placeholder",
 		eggGroups: ["Dragon"],
 	},
 	hessifeng: {
@@ -19086,6 +19088,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		heightm: 1.6,
 		weightkg: 60,
 		color: "Yellow",
+		prevo: "Placeholder",
 		eggGroups: ["Human-Like", "Amorphous"],
 	},
 	lickilickymega: {
