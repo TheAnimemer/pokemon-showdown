@@ -325,6 +325,10 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 		doublesTier: "DUber",
 		natDexTier: "Uber",
 	},
+	placeholder: {
+		isNonstandard: "Past",
+		tier: "Illegal",
+	},
 
 	// Regular Formatting
 
