@@ -19266,7 +19266,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1044,
 		name: "Coolduck",
 		types: ["Water", "Psychic"],
-		baseStats: {hp: 100, atk: 40, def: 120, spa: 95, spd: 120, spe: 40},
+		baseStats: {hp: 100, atk: 55, def: 105, spa: 95, spd: 105, spe: 40},
 		abilities: {0: "Simple", 1: "Cloud Nine", H: "Unaware"},
 		heightm: 1.4,
 		weightkg: 104.6,

@@ -2427,7 +2427,14 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "(Gen 2) Holder is cured if it is poisoned. Single use.",
 	},
 
-	// CAP items
+	// AniCAP Items
+
+	deciduite: {
+		name: "Deciduite",
+		shortDesc: "If held by an Decidueye, this item allows it to Mega Evolve in battle.",
+	},
+
+	// CAP Items
 
 	crucibellite: {
 		name: "Crucibellite",
