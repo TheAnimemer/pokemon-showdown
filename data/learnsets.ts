@@ -94025,6 +94025,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	lizendro: {
 		learnset: {
+			toxic: ["9M"],
 			tackle: ["9M"],
 			astonish: ["9M"],
 			attract: ["9M"],
@@ -94980,7 +94981,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			brickbreak: ["9M"],
 			icespinner: ["9M"],
 			swordsdance: ["9M"],
-			tailglow: ["9M"],
 			shedtail: ["9M"],
 			breakingswipe: ["9M"],
 			charge: ["9M"],
@@ -95647,6 +95647,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	witheroot: {
 		learnset: {
+			toxic: ["9M"],
 			protect: ["9M"],
 			substitute: ["9M"],
 			rest: ["9M"],
