@@ -18946,7 +18946,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Sinester",
 		types: ["Dark"],
 		baseStats: {hp: 95, atk: 120, def: 95, spa: 55, spd: 115, spe: 120},
-		abilities: {0: "Initimidate", 1: "Defiant", H: "Chaos"},
+		abilities: {0: "Intimidate", 1: "Defiant", H: "Chaos"},
 		heightm: 1.4,
 		weightkg: 15,
 		color: "Black",
