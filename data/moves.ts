@@ -22389,12 +22389,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		flags: {protect: 1, mirror: 1, metronome: 1},
 		onEffectiveness(typeMod, target, type, move) {
-			return typeMod + this.dex.getEffectiveness('Ground', type);
+			return typeMod + this.dex.getEffectiveness('Fairy', type);
 		},
 		priority: 0,
 		secondary: null,
 		target: "any",
-		type: "Fairy",
+		type: "Ground",
 		contestType: "Tough",
 	},
 	skinbind: {
@@ -22442,7 +22442,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
-		name: "Icicle Spear",
+		name: "Shade Volley",
 		pp: 15,
 		priority: 0,
 		flags: { protect: 1, mirror: 1, metronome: 1 },
@@ -22455,6 +22455,23 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dark",
 		zMove: { basePower: 140 },
 		contestType: "Beautiful",
+	},
+	menacinghaymaker: {
+		num: -1020,
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		name: "Menacing Haymaker",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 30,
+			volatileStatus: 'flinch',
+		},
+		target: "any",
+		type: "Dark",
+		contestType: "Cool",
 	},
 
 	// CAP moves

@@ -94313,6 +94313,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			plasmafists: ["9M"],
 			voltswitch: ["9M"],
+			swordsdance: ["9M"],
+			shadowsneak: ["9M"],
 			knockoff: ["9M"],
 			playrough: ["9M"],
 			bulkup: ["9M"],
@@ -95839,7 +95841,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			rest: ["9M"],
 			sleeptalk: ["9M"],
 			terablast: ["9M"],
-			beatuppunch: ["9L1"],
+			beatup: ["9L1"],
 			suckerpunch: ["9M"],
 			memento: ["9M"],
 			switcheroo: ["9M"],
