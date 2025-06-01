@@ -779,7 +779,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	intimidate: {
 		name: "Intimidate",
-		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, or Scrappy Abilities and Pokemon behind a substitute are immune.",
+		desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon with the Inner Focus, Oblivious, Own Tempo, Soothing Starlight, or Scrappy Abilities and Pokemon behind a substitute are immune.",
 		shortDesc: "On switch-in, this Pokemon lowers the Attack of opponents by 1 stage.",
 		gen7: {
 			desc: "On switch-in, this Pokemon lowers the Attack of opposing Pokemon by 1 stage. Pokemon behind a substitute are immune.",
@@ -2262,7 +2262,64 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		activate: "  [POKEMON] underwent a heroic transformation!",
 	},
 
+	// AniCAP
+
+	ironshooter: {
+		name: "Iron Shooter",
+		desc: "This Pokemon's Bullet moves have their power multiplied by 1.5.",
+		shortDesc: "This Pokemon's Bullet moves have 1.5x power.",
+	},
+	soothingstarlight: {
+		name: "Soothing Starlight",
+		desc: "This Pokemon and it's allies cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
+		shortDesc: "This Pokemon and it's allies cannot be infatuated or taunted. Immune to Intimidate.",
+	},
+	powerofneo: {
+		name: "Power of Neo",
+		desc: "When this Pokemon has 1/3 or less of its maximum HP, its Defense and Special Defense are doubled. This boost remains even if the Pokemon heals above 1/3 of its maximum HP, and is only removed if the Pokemon switches out after healing.",
+		shortDesc: "At 1/3 HP, doubles Defense/Sp. Def. Persists if healed; removed on switch.",
+	},
+	smolderingend: {
+		name: "Smoldering End",
+		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Fire-type attack.",
+	},
+	fossilize: {
+		name: "Fossilize",
+		desc: "This Pokemon's Normal-type moves become Rock-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Rock-type and have 1.2x power.",
+	},
+	chaos: {
+		name: "Chaos",
+		desc: "This Pokemon's offensive stat is multiplied by 1.5 while using an attack against a confused target.",
+		shortDesc: "This Pokemon's attacks are 1.5x power against confused targets.",
+	},
+	hydraulize: {
+		name: "Hydraulize",
+		desc: "This Pokemon's Normal-type moves become Water-type moves and have their power multiplied by 1.2. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Water-type and have 1.2x power.",
+	},
+	creepingleaves: {
+		name: "Creeping Leaves",
+		desc: "This Pokemon receives double the amount of HP from healing effects that do not target itself directly. Self-targeted healing moves restore the normal amount of HP.",
+		shortDesc: "Healing from non-self sources is doubled; self-healing is unaffected.",
+	},
+	hugeguard: {
+		name: "Huge Guard",
+		shortDesc: "This Pokemon receives 1/2 damage from resisted attacks.",
+	},
+	festeringcloak: {
+		name: "Festering Cloak",
+		desc: "Opposing Pokemon lose 1/12 of their maximum HP, rounded down, when they switch in. Pokemon with the Magic Guard ability are immune.",
+		shortDesc: "Opposing Pokemon lose 1/12 max HP on switch-in.",
+	},
+	remedialooze: {
+		name: "Remedial Ooze",
+		desc: "This Pokemon restores 1/4 of its maximum HP, rounded down, whenever an opposing Pokemon switches out. This effect does not activate on KO.",
+		shortDesc: "Heals 1/4 max HP when an opposing Pokemon switches out.",
+	},
+
 	// CAP
+
 	mountaineer: {
 		name: "Mountaineer",
 		shortDesc: "On switch-in, this Pokemon avoids all Rock-type attacks and Stealth Rock.",
