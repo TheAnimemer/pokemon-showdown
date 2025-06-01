@@ -7608,4 +7608,97 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 			shortDesc: "Nearly always goes first. Always crits.",
 		},
 	},
+
+	// AniCAP
+
+	froststomp: {
+		name: "Frost Stomp",
+		desc: "Has a 10% chance to freeze the target.",
+		shortDesc: "10% chance to freeze the foe(s).",
+	},
+	electricpiercer: {
+		name: "Electric Piercer",
+		desc: "This move combines Bug in its type effectiveness against the target.",
+		shortDesc: "Combines Bug in its type effectiveness.",
+	},
+	bigshot: {
+		name: "Big Shot",
+		desc: "This move's base power increases by 10% each time it is used consecutively, up to a maximum of 50% increased power. The boost resets if the user uses a different move or fails to act.",
+		shortDesc: "Power increases by 10% per consecutive use, up to 50%.",
+	},
+	blastpuke: {
+		name: "Blast Puke",
+		desc: "Inflicts Blastblight on the target. Blastblight is a volatile status condition that causes the afflicted Pokemon to lose 1/8 of its maximum HP at the end of each turn.",
+		shortDesc: "Inflicts Blastblight, which deals 1/8 max HP each turn until the target switches out.",
+	},
+	thundercrash: {
+		name: "Thunder Crash",
+		desc: "Lowers the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Lowers the user's Defense and Sp. Def by 1.",
+	},
+	octuplefrost: {
+		name: "Octuple Frost",
+		desc: "Hits eight times. This move checks accuracy for each hit, and the attack ends if the target avoids a hit. If one of the hits breaks the target's substitute, it will take damage for the remaining hits.",
+		shortDesc: "Hits 8 times. Each hit can miss.",
+	},
+	soaringsparkle: {
+		name: "Soaring Sparkle",
+		desc: "If the current terrain is Misty Terrain and the user is grounded, this move hits all opposing Pokemon and has its power multiplied by 1.5.",
+		shortDesc: "User on Misty Terrain: 1.5x power, hits foes.",
+	},
+	rushinglance: {
+		name: "Rushing Lance",
+		desc: "Hits three times. If the first hit breaks the target's substitute, it will take damage for the second hit.",
+		shortDesc: "Hits 3 times in one turn.",
+	},
+	makeshiftbreaker: {
+		name: "Makeshift Breaker",
+		desc: "Has a very high chance for a critical hit.",
+		shortDesc: "Very high critical hit ratio.",
+	},
+	plasmablade: {
+		name: "Plasma Blade",
+		shortDesc: "No additional effect.",
+	},
+	nightmareremedy: {
+		name: "Nightmare Remedy",
+		desc: "The user is protected from most attacks made by other Pokemon during this turn, and Pokemon trying to make contact with the user have their Speed lowered by 1 stage. Non-damaging moves go through this protection. This move has a 1/X chance of being successful, where X starts at 1 and triples each time this move is successfully used. X resets to 1 if this move fails, if the user's last move used is not Baneful Bunker, Burning Bulwark, Detect, Endure, King's Shield, Max Guard, Obstruct, Protect, Quick Guard, Silk Trap, Spiky Shield, or Wide Guard, or if it was one of those moves and the user's protection was broken. Fails if the user moves last this turn.",
+		shortDesc: "Protects from damaging attacks. Contact: -1 Spe.",
+	},
+	boilinglash: {
+		name: "Boiling Lash",
+		desc: "Taunts the target, preventing it from using status moves for 3 turns. Has a 10% chance to burn the target.",
+		shortDesc: "Taunts the target; 10% chance to burn.",
+	},
+	sinfulnectar: {
+		name: "Sinful Nectar",
+		desc: "For 2 turns, the target is prevented from restoring any HP as long as it remains active. During the effect, healing and draining moves are unusable, and Abilities and items that grant healing will not heal the user. If an affected Pokemon uses Baton Pass, the replacement will remain unable to restore its HP. Pain Split and the Regenerator Ability are unaffected.",
+		shortDesc: "For 2 turns, the target is prevented from healing.",
+	},
+	hedge: {
+		name: "Hedge",
+		desc: "Has a 50% chance to raise the user's Defense by 1 stage.",
+		shortDesc: "50% chance to raise user's Defense by 1.",
+	},
+	aerocutter: {
+		name: "Aerocutter",
+		desc: "This move becomes a special attack if the user's Special Attack is greater than its Attack, including stat stage changes.",
+		shortDesc: "Special if user's Sp. Atk > Atk.",
+	},
+	pixiequake: {
+		name: "Pixie Quake",
+		desc: "This move combines Fairy in its type effectiveness against the target.",
+		shortDesc: "Combines Fairy in its type effectiveness.",
+	},
+	skinbind: {
+		name: "Skinbind",
+		desc: "If the target has a substitute, the user consumes it, instantly destroying the substitute and restoring 1/4 of the user's maximum HP.",
+		shortDesc: "If foe has a sub: destroys it and heals user 1/4 max HP. Otherwise, hits normally.",
+	},
+	assimilate: {
+		name: "Assimilate",
+		desc: "If the target has a substitute, the user consumes it, instantly destroying the substitute and restoring 1/4 of the user's maximum HP.",
+		shortDesc: "If foe has a sub: destroys it and heals user 1/4 max HP. Otherwise, hits normally.",
+	},
+
 };
