@@ -2274,8 +2274,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		desc: "This Pokemon and it's allies cannot be infatuated or taunted. Gaining this Ability while infatuated or taunted cures it. This Pokemon is immune to the effect of the Intimidate Ability.",
 		shortDesc: "This Pokemon and it's allies cannot be infatuated or taunted. Immune to Intimidate.",
 	},
-	powerofneo: {
-		name: "Power of Neo",
+	neoarmor: {
+		name: "Neo Armor",
 		desc: "When this Pokemon has 1/3 or less of its maximum HP, its Defense and Special Defense are doubled. This boost remains even if the Pokemon heals above 1/3 of its maximum HP, and is only removed if the Pokemon switches out after healing.",
 		shortDesc: "At 1/3 HP, doubles Defense/Sp. Def. Persists if healed; removed on switch.",
 	},

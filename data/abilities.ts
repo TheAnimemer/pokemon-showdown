@@ -5635,7 +5635,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -1002,
 	},
-	powerofneo: {
+	neoarmor: {
 		onModifyDefPriority: 5,
 		onModifyDef(def, pokemon) {
 			if (pokemon.hp <= pokemon.maxhp / 3) {
@@ -5649,7 +5649,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			}
 		},
 		flags: {},
-		name: "Power of Neo",
+		name: "Neo Armor",
 		rating: 3,
 		num: -1003,
 	},
