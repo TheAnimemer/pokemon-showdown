@@ -7700,5 +7700,9 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 		desc: "If the target has a substitute, the user consumes it, instantly destroying the substitute and restoring 1/4 of the user's maximum HP.",
 		shortDesc: "If foe has a sub: destroys it and heals user 1/4 max HP. Otherwise, hits normally.",
 	},
-
+	shadevolley: {
+		name: "Shade Volley",
+		desc: "Hits two to five times, with each hit having a 5% chance to confuse the target. Has a 35% chance to hit two or three times and a 15% chance to hit four or five times. If one of the hits breaks the target's substitute, it will take damage for the remaining hits. If the user has the Skill Link Ability, this move will always hit five times. If the user is holding Loaded Dice, this move will hit 4-5 times.",
+		shortDesc: "Hits 2-5 times in one turn. Each hit has 5% chance to confuse.",
+	},
 };
