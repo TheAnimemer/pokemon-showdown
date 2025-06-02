@@ -7628,8 +7628,11 @@ export const MovesText: { [id: IDEntry]: MoveText } = {
 	},
 	blastpuke: {
 		name: "Blast Puke",
-		desc: "Inflicts Blastblight on the target. Blastblight is a volatile status condition that causes the afflicted Pokemon to lose 1/8 of its maximum HP at the end of each turn.",
-		shortDesc: "Inflicts Blastblight, which deals 1/8 max HP each turn until the target switches out.",
+		desc: "Causes damage to the target equal to 1/8 of its maximum HP, rounded down, at the end of each turn during effect. This effect ends when the target is no longer active.",
+		shortDesc: "Deals 1/8 max HP each turn.",
+
+		start: "  [POKEMON] is covered in Blast Puke!",
+		damage: "  [POKEMON] is hurt by Blast Puke!",
 	},
 	thundercrash: {
 		name: "Thunder Crash",

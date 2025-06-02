@@ -22145,7 +22145,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		contestType: "Tough",
 		secondary: {
 			chance: 100,
-			volatileStatus: 'blastblight',
+			volatileStatus: 'blastpuke',
 		},
 	},	
 	thundercrash: {
