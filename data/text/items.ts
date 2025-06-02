@@ -2431,7 +2431,80 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 
 	deciduite: {
 		name: "Deciduite",
-		shortDesc: "If held by an Decidueye, this item allows it to Mega Evolve in battle.",
+		shortDesc: "If held by a Decidueye, this item allows it to Mega Evolve in battle.",
+	},
+	froslassite: {
+		name: "Froslassite",
+		shortDesc: "If held by a Froslass, this item allows it to Mega Evolve in battle.",
+	},
+	powersash: {
+		name: "Power Sash",
+		desc: "When the holder uses its first same-type attack, the move receives a 2x STAB boost instead of 1.5x. If the holder has the Adaptability Ability, the STAB boost becomes 2.5x instead. Single user.",
+		shortDesc: "First STAB move is 2x power. Single use.",
+	},
+	megalite: {
+		name: "Megalite",
+		desc: "If the holder is capable of Mega Evolution, its Defense and Special Defense are multiplied by 1.3. This effect applies even if the Pokemon has not yet Mega Evolved.",
+		shortDesc: "If able to Mega Evolve: 1.3x Defense and Sp. Def.",
+	},
+	radioantenna: {
+		name: "Radio Antenna",
+		desc: "When the holder uses or is hit by a contact move, the target is affected with interference for 5 turns. During this time, the affected Pokémon's held item has no effect, regardless of which side initiated contact.",
+		shortDesc: "On contact: disables foe's item for 5 turns.",
+	},
+	callingcard: {
+		name: "Calling Card",
+		desc: "When the holder switches out, all opposing Pokémon are afflicted with Taunt. Single use.",
+		shortDesc: "On switch-out: Taunts foes. Single use.",
+	},
+	ejectorboots: {
+		name: "Ejector Boots",
+		desc: "If the holder becomes Confused, Taunted, Infatuated, Encored, or Disabled, it immediately switches out. This effect only activates once per status condition and does not trigger if the holder cannot switch out.",
+		shortDesc: "Switches out if affected by Confusion, Taunt, Infatuation, Encore, or Disable.",
+	},
+	ackleberry: {
+		name: "Ackle Berry",
+		shortDesc: "Restores 1/3 max HP on switch-out if the user is below 100% HP. Single use.",
+	},
+	sceptilitet: {
+		name: "Sceptilite-T",
+		shortDesc: "If held by a Sceptile-Tanoso, this item allows it to Mega Evolve in battle.",
+	},
+	magnezonite: {
+		name: "Magnezonite",
+		shortDesc: "If held by a Magnezone, this item allows it to Mega Evolve in battle.",
+	},
+	delphoxite: {
+		name: "Delphoxite",
+		shortDesc: "If held by a Delphox-Tanoso, this item allows it to Mega Evolve in battle.",
+	},
+	primarinite: {
+		name: "Primarinite",
+		shortDesc: "If held by a Primarina, this item allows it to Mega Evolve in battle.",
+	},
+	incineroarite: {
+		name: "Incineroarite",
+		shortDesc: "If held by a Incineroar, this item allows it to Mega Evolve in battle.",
+	},
+	quaquavalite: {
+		name: "quaquavalite",
+		shortDesc: "If held by a Delphox-Tanoso, this item allows it to Mega Evolve in battle.",
+	},
+	lickilickite: {
+		name: "Lickilickite",
+		shortDesc: "If held by a Lickilicky, this item allows it to Mega Evolve in battle.",
+	},
+	regielekite: {
+		name: "Regeielekite",
+		shortDesc: "If held by a Regieleki, this item allows it to Mega Evolve in battle.",
+	},
+	regidragite: {
+		name: "Regidragite",
+		shortDesc: "If held by a Regidrago, this item allows it to Mega Evolve in battle.",
+	},
+	zangoosite: {
+		name: "Zangoosite",
+		shortDesc: "If held by a Zangoose, this item allows it to Mega Evolve in battle.",
 	},
 
 	// CAP Items
