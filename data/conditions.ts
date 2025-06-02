@@ -887,19 +887,20 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
-	blastblight: {
+	blastpuke: {
+		name: 'Blast Puke',
 		noCopy: true,
 		onResidual(pokemon) {
 			this.damage(pokemon.baseMaxhp / 8);
 		},
 		onStart(pokemon) {
-			this.add('-start', pokemon, 'Blastblight');
+			this.add('-start', pokemon, 'Blast Puke');
 		},
 		onEnd(pokemon) {
-			this.add('-end', pokemon, 'Blastblight');
+			this.add('-end', pokemon, 'Blast Puke');
 		},
 		onSwitchOut(pokemon) {
-			pokemon.removeVolatile('blastblight');
+			pokemon.removeVolatile('Blast Puke');
 		},
 	},
 };
