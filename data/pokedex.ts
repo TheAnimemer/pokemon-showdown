@@ -18829,7 +18829,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Weavile",
 		forme: "Tanoso",
 		types: ["Ghost", "Rock"],
-		baseStats: {hp: 70, atk: 65, def: 45, spa: 120, spd: 80, spe: 125},
+		baseStats: {hp: 70, atk: 65, def: 45, spa: 120, spd: 85, spe: 125},
 		abilities: {0: "Fossilize"},
 		heightm: 1,
 		weightkg: 21.7,
