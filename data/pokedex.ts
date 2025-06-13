@@ -18771,9 +18771,9 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		gen: 6,
 	},
 	sceptiletanoso: {
-		num: 254,
+		num: -1503,
 		name: "Sceptile-Tanoso",
-		baseSpecies: "Sceptile",
+		baseSpecies: "Sceptile-Tanoso",
 		forme: "Tanoso",
 		types: ["Dragon", "Electric"],
 		baseStats: {hp: 65, atk: 110, def: 80, spa: 85, spd: 68, spe: 122},
@@ -18838,7 +18838,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Monster"],
 	},
 	sceptiletanosomega: {
-		num: 254,
+		num: -1503,
 		name: "Sceptile-Tanoso-Mega",
 		baseSpecies: "Sceptile",
 		forme: "Mega",
@@ -18886,7 +18886,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		formeOrder: ["Delphox-Tanoso", "Delphox-Tanoso-Mega"],
 	},
 	quaquavaltanoso: {
-		num: 914,
+		num: -1502,
 		name: "Quaquaval-Tanoso",
 		baseSpecies: "Quaquaval",
 		forme: "Tanoso",
@@ -19052,7 +19052,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		eggGroups: ["Mineral"],
 	},
 	quaquavaltanosomega: {
-		num: 914,
+		num: -1502,
 		name: "Quaquaval-Tanoso-Mega",
 		baseSpecies: "Quaquaval-Tanoso",
 		forme: "Mega",
@@ -19063,7 +19063,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 230.3,
 		color: "White",
 		eggGroups: ["Flying"],
-		requiredItem: "Quaquavalite",
+		requiredItem: "quaquavalite",
 		gen: 6,
 	},
 	basalalt: {

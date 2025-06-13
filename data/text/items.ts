@@ -2474,8 +2474,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Magnezonite",
 		shortDesc: "If held by a Magnezone, this item allows it to Mega Evolve in battle.",
 	},
-	delphoxite: {
-		name: "Delphoxite",
+	delphoxitet: {
+		name: "Delphoxite-T",
 		shortDesc: "If held by a Delphox-Tanoso, this item allows it to Mega Evolve in battle.",
 	},
 	primarinite: {
@@ -2487,8 +2487,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		shortDesc: "If held by a Incineroar, this item allows it to Mega Evolve in battle.",
 	},
 	quaquavalite: {
-		name: "quaquavalite",
-		shortDesc: "If held by a Delphox-Tanoso, this item allows it to Mega Evolve in battle.",
+		name: "Quaquavalite",
+		shortDesc: "If held by a Quaquaval-Tanoso, this item allows it to Mega Evolve in battle.",
 	},
 	lickilickite: {
 		name: "Lickilickite",
