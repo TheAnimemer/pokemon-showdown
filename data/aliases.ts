@@ -2585,7 +2585,6 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	imph: "Impharie",
 	lightenna: "Raitenna",
 	arse: "Arsenatch",
-	snatch: "Arsenatch",
 	erin: "Erinyoxic",
 	mdecid: "Decidueye-Mega",
 	mdecidueye: "Decidueye-Mega",
