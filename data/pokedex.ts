@@ -18840,7 +18840,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sceptiletanosomega: {
 		num: -1503,
 		name: "Sceptile-Tanoso-Mega",
-		baseSpecies: "Sceptile",
+		baseSpecies: "Sceptile-Tanoso",
 		forme: "Mega",
 		types: ["Dragon", "Electric"],
 		genderRatio: {M: 0.5, F: 0.5},
