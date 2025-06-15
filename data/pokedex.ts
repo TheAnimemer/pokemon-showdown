@@ -19063,7 +19063,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 230.3,
 		color: "White",
 		eggGroups: ["Flying"],
-		requiredItem: "quaquavalite",
+		requiredItem: "Quaquavalite",
 		gen: 6,
 	},
 	basalalt: {
