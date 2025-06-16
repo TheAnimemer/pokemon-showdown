@@ -93831,7 +93831,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			icywind: ["9M"],
 			block: ["9M"],
 			cosmicpower: ["9M"],
-			explosion: ["9M"],
 			mistyexplosion: ["9M"],
 			mistyterrain: ["9M"],
 			aromaticmist: ["9M"],

@@ -2486,8 +2486,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 		name: "Incineroarite",
 		shortDesc: "If held by a Incineroar, this item allows it to Mega Evolve in battle.",
 	},
-	quaquavalite: {
-		name: "Quaquavalite",
+	quaquavalitet: {
+		name: "Quaquavalite-T",
 		shortDesc: "If held by a Quaquaval-Tanoso, this item allows it to Mega Evolve in battle.",
 	},
 	lickilickite: {
