@@ -7739,12 +7739,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 236,
 		fling: { basePower: 60 },
 		onAfterHit(target, source, move) {
+			console.log(`[Radio Antenna] onAfterHit triggered`);
+			console.log(`Move: ${move.name}, Target: ${target.name}, Source: ${source.name}`);
 			if (move.flags['contact'] && target.item === 'radioantenna' && source.item) {
 				source.addVolatile('embargo');
 				this.add('-activate', source, 'item: Radio Antenna');
 			}
 		},
 		onSourceAfterHit(target, source, move) {
+			console.log(`[Radio Antenna] onSourceAfterHit triggered`);
+			console.log(`Move: ${move.name}, Source: ${source.name}, Target: ${target.name}`);
 			if (move.flags['contact'] && source.item === 'radioantenna' && target.item) {
 				target.addVolatile('embargo');
 				this.add('-activate', target, 'item: Radio Antenna');
