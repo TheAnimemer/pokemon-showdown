@@ -7735,23 +7735,23 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		gen: 9,
 	},
 	radioantenna: {
-  		name: "Radio Antenna",
-  		spritenum: 236,
-  		fling: { basePower: 60 },
-  		onAfterHit(target, source, move) {
-    		if (!move.flags['contact']) return;
-			
-    		if (source.item === 'radioantenna' && target.item) {
-      			target.addVolatile('radioantenna');
-      			this.add('-activate', target, 'item: Radio Antenna');
-    		}
-    		if (target.item === 'radioantenna' && source.item) {
-      			source.addVolatile('radioantenna');
-      			this.add('-activate', source, 'item: Radio Antenna');
-    		}
-  		},
-  		num: -1005,
-  		gen: 9,
+		name: "Radio Antenna",
+		spritenum: 236,
+		fling: { basePower: 60 },
+		onAfterHit(target, source, move) {
+			if (move.flags['contact'] && target.item === 'radioantenna' && source.item) {
+				source.addVolatile('embargo');
+				this.add('-activate', source, 'item: Radio Antenna');
+			}
+		},
+		onSourceAfterHit(target, source, move) {
+			if (move.flags['contact'] && source.item === 'radioantenna' && target.item) {
+				target.addVolatile('embargo');
+				this.add('-activate', target, 'item: Radio Antenna');
+			}
+		},
+		num: -1005,
+		gen: 9,
 	},
 	callingcard: {
 		name: "Calling Card",

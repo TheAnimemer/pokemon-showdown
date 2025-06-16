@@ -94122,7 +94122,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	saruglace: {
 		learnset: {
-			iciclespear: ["9M"],
 			fakeout: ["9M"],
 			quickattack: ["9M"],
 			attract: ["9M"],
@@ -94172,7 +94171,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			beatup: ["9M"],
 			blizzard: ["9M"],
 			freezedry: ["9M"],
-			tripleaxel: ["9M"],
 			drainpunch: ["9M"],
 			endeavor: ["9M"],
 			facade: ["9M"],
@@ -94396,7 +94394,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sleeppowder: ["9M"],
 			imprison: ["9M"],
 			encore: ["9M"],
-			block: ["9M"],
+			meanlook: ["9M"],
 			firstimpression: ["9M"],
 			recycle: ["9M"],
 			magicalleaf: ["9M"],
