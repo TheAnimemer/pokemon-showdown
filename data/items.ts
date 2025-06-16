@@ -7733,36 +7733,25 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		},
 		num: -1004,
 		gen: 9,
-	},	
+	},
 	radioantenna: {
-		name: "Radio Antenna",
-		spritenum: 236,
-		fling: {
-			basePower: 60,
-			effect(pokemon, target) {
-				if (target && target.item) {
-					const item = target.item;
-					target.setItem('');
-					this.add('-enditem', target, item, '[Radio Antenna Fling]');
-				}
-			},
-		},
-		onAfterHit(target, source, move) {
-			if (move.flags['contact'] && target.item) {
-				const item = target.item;
-				target.setItem('');
-				this.add('-enditem', target, item, '[Radio Antenna Contact]');
-			}
-		},
-		onHit(target, source, move) {
-			if (move.flags['contact'] && source.item) {
-				const item = source.item;
-				source.setItem('');
-				this.add('-enditem', source, item, '[Radio Antenna Recoil]');
-			}
-		},
-		num: -1005,
-		gen: 9,
+  		name: "Radio Antenna",
+  		spritenum: 236,
+  		fling: { basePower: 60 },
+  		onAfterHit(target, source, move) {
+    		if (!move.flags['contact']) return;
+			
+    		if (source.item === 'radioantenna' && target.item) {
+      			target.addVolatile('radioantenna');
+      			this.add('-activate', target, 'item: Radio Antenna');
+    		}
+    		if (target.item === 'radioantenna' && source.item) {
+      			source.addVolatile('radioantenna');
+      			this.add('-activate', source, 'item: Radio Antenna');
+    		}
+  		},
+  		num: -1005,
+  		gen: 9,
 	},
 	callingcard: {
 		name: "Calling Card",
@@ -7829,8 +7818,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1009,
 		gen: 6,
 	},
-	magnezite: {
-		name: "Magnezite",
+	magnezonite: {
+		name: "Magnezonite",
 		spritenum: 621,
 		megaStone: "Magnezone-Mega",
 		megaEvolves: "Magnezone",
@@ -7855,8 +7844,8 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		num: -1011,
 		gen: 6,
 	},
-	quaquavalite: {
-		name: "Quaquavalite",
+	quaquavalitet: {
+		name: "Quaquavalitet",
 		spritenum: 576,
 		megaStone: "Quaquaval-Tanoso-Mega",
 		megaEvolves: "Quaquaval-Tanoso",

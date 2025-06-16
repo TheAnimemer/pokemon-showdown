@@ -18866,7 +18866,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 551,
 		color: "Gray",
 		eggGroups: ["Mineral"],
-		requiredItem: "Magnezite",
+		requiredItem: "Magnezonite",
 		gen: 6,
 	},
 	delphoxtanoso: {
@@ -19063,7 +19063,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		weightkg: 230.3,
 		color: "White",
 		eggGroups: ["Flying"],
-		requiredItem: "Quaquavalite",
+		requiredItem: "Quaquavalite-T",
 		gen: 6,
 	},
 	basalalt: {
