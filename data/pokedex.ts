@@ -16728,8 +16728,8 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		prevo: "Quaxwell",
 		evoLevel: 36,
 		eggGroups: ["Flying", "Water 1"],
-		otherFormes: ["Quaquaval-Tanoso"], 
-		formeOrder: ["Quaquaval", "Quaquaval-Tanoso"],  
+		otherFormes: ["Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"], 
+		formeOrder: ["Quaquaval", "Quaquaval-Tanoso", "Quaquaval-Tanoso-Mega"],  
 	},
 	lechonk: {
 		num: 915,
@@ -18773,7 +18773,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 	sceptiletanoso: {
 		num: -1503,
 		name: "Sceptile-Tanoso",
-		baseSpecies: "Sceptile-Tanoso",
+		baseSpecies: "Sceptile",
 		forme: "Tanoso",
 		types: ["Dragon", "Electric"],
 		baseStats: {hp: 65, atk: 110, def: 80, spa: 85, spd: 68, spe: 122},
