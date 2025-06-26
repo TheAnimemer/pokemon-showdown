@@ -2276,8 +2276,8 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	},
 	neoarmor: {
 		name: "Neo Armor",
-		desc: "^BROKEN^ When this Pokemon has 1/3 or less of its maximum HP, its Defense and Special Defense are doubled. This boost remains even if the Pokemon heals above 1/3 of its maximum HP, and is only removed if the Pokemon switches out after healing.",
-		shortDesc: "^BROKEN^ At 1/3 HP, doubles Defense/Sp. Def. Persists if healed; removed on switch.",
+		desc: "When this Pokemon has 1/3 or less of its maximum HP, rounded down, both its defensive stats are multiplied by 2.",
+		shortDesc: "At 1/3 or less of its max HP, this Pokemon's defensive stats are doubled.",
 	},
 	smolderingend: {
 		name: "Smoldering End",
@@ -2301,7 +2301,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	creepingleaves: {
 		name: "Creeping Leaves",
 		desc: "This Pokemon receives double the amount of HP from healing effects that do not target itself directly. Self-targeted healing moves restore the normal amount of HP.",
-		shortDesc: "Healing from non-self sources is doubled; self-healing is unaffected.",
+		shortDesc: "Healing from non-self sources is doubled.",
 	},
 	hugeguard: {
 		name: "Huge Guard",

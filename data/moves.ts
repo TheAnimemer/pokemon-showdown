@@ -8592,6 +8592,9 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				if (effect?.name === "Psychic Noise") {
 					return 2;
 				}
+				if (effect?.name === "Sinful Nectar") {
+					return 2;
+				}
 				if (source?.hasAbility('persistent')) {
 					this.add('-activate', source, 'ability: Persistent', '[move] Heal Block');
 					return 7;
@@ -19719,6 +19722,15 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		volatileStatus: 'taunt',
 		condition: {
 			duration: 3,
+			durationCallback(target, source, effect) {
+				if (effect?.name === "Taunt") {
+					return 3;
+				}
+				if (effect?.name === "Boiling Lash") {
+					return 3;
+				}
+				return 3;
+			},
 			onStart(target) {
 				if (target.activeTurns && !this.queue.willMove(target)) {
 					this.effectState.duration!++;
