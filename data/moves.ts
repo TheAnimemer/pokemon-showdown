@@ -22114,7 +22114,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, '10,000,000 Volt Thunderbolt', source);
+			this.add('-anim', source, 'Thunder Cage', source);
 			this.add('-anim', source, 'X-Scissor', target);
 		}, // For custom animations
 		priority: 0,
@@ -22138,7 +22138,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onPrepareHit(target, source) {
 			this.add('-anim', source, 'Luster Purge', target);
-			this.add('-anim', source, 'Soft Boiled', target);
+			this.add('-anim', target, 'Soft Boiled', source);
 		}, // For custom animations
 		type: "Fairy",
 		target: "normal",
@@ -22323,8 +22323,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Smart Strike', target);
 			this.add('-anim', source, 'Discharge', target);
+			this.add('-anim', source, 'Smart Strike', target);
 		}, // For custom animations
 		secondary: null,
 		target: "normal",
@@ -22426,7 +22426,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Aqua Ring', target);
+			this.add('-anim', target, 'Aqua Ring', source);
 			this.add('-anim', source, 'Hex', target);
 		}, // For custom animations
 		secondary: {
@@ -22450,7 +22450,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		},
 		onPrepareHit(target, source) {
 			this.add('-anim', source, 'Harden', source);
-			this.add('-anim', source, 'Rollout', target);
+			this.add('-anim', source, 'Stone Edge', target);
 		}, // For custom animations
 		secondary: {
 			chance: 50,
