@@ -22108,6 +22108,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Heavy Slam', target);
+		}, // For custom animations
 		secondary: {
 			chance: 10,
 			status: 'frz',
@@ -22127,6 +22133,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onEffectiveness(typeMod, target, type, move) {
 			return typeMod + this.dex.getEffectiveness('Bug', type);
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, '10,000,000 Volt Thunderbolt', source);
+			this.add('-anim', source, 'X-Scissor', target);
+		}, // For custom animations
 		priority: 0,
 		secondary: null,
 		target: "any",
@@ -22143,6 +22156,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Luster Purge', target);
+			this.add('-anim', source, 'Soft Boiled', target);
+		}, // For custom animations
 		type: "Fairy",
 		target: "normal",
 		contestType: "Cool",
@@ -22175,6 +22195,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Stockpile', source);
+			this.add('-anim', source, 'Eruption', target);
+		}, // For custom animations
 		type: "Fire",
 		target: "normal",
 		contestType: "Tough",
@@ -22192,6 +22219,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Volt Tackle', target);
+			this.add('-anim', source, 'Thunder', target);
+		}, // For custom animations
 		self: {
 			boosts: {
 				def: -1,
@@ -22212,6 +22246,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 5,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Icy Wind', target);
+		}, // For custom animations
 		multihit: 8,
 		multiaccuracy: true,
 		secondary: null,
@@ -22238,6 +22278,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				move.target = 'allAdjacentFoes';
 			}
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Aromatic Mist', source);
+			this.add('-anim', source, 'Fairy Wind', target);
+		}, // For custom animations
 		secondary: null,
 		target: "normal",
 		type: "Fairy",
@@ -22251,6 +22298,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Behemoth Bash', target);
+		}, // For custom animations
 		multihit: 3,
 		secondary: null,
 		target: "normal",
@@ -22267,6 +22320,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Gear Up', source);
+			this.add('-anim', source, 'Magnitude', target);
+		}, // For custom animations
 		critRatio: 3,
 		secondary: null,
 		target: "normal",
@@ -22282,6 +22342,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1, slicing: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Smart Strike', target);
+			this.add('-anim', source, 'Discharge', target);
+		}, // For custom animations
 		secondary: null,
 		target: "normal",
 		type: "Electric",
@@ -22351,6 +22418,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Aqua Tail', target);
+			this.add('-anim', source, 'Focus Energy', target);
+		}, // For custom animations
 		secondary: {
 			chance: 10,
 			status: 'brn',
@@ -22371,6 +22445,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		pp: 15,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, bypasssub: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Aqua Ring', target);
+			this.add('-anim', source, 'Hex', target);
+		}, // For custom animations
 		secondary: {
 			chance: 100,
 			volatileStatus: 'healblock',
@@ -22386,7 +22467,14 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		name: "Hedge",
 		pp: 10,
 		priority: 0,
-		flags: {protect: 1, mirror: 1, metronome: 1},
+		flags: {contact: 1, protect: 1, mirror: 1, metronome: 1},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Harden', source);
+			this.add('-anim', source, 'Rollout', target);
+		}, // For custom animations
 		secondary: {
 			chance: 50,
 			self: {
@@ -22410,6 +22498,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onModifyMove(move, pokemon) {
 			if (pokemon.getStat('spa', false, true) > pokemon.getStat('atk', false, true)) move.category = 'Special';
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Aeroblast', target);
+		}, // For custom animations
 		secondary: null,
 		target: "normal",
 		type: "Flying",
@@ -22426,6 +22520,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		onEffectiveness(typeMod, target, type, move) {
 			return typeMod + this.dex.getEffectiveness('Fairy', type);
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Aromatic Mist', target);
+			this.add('-anim', source, 'Earthquake', target);
+		}, // For custom animations
 		priority: 0,
 		secondary: null,
 		target: "any",
@@ -22448,6 +22549,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.heal(substituteHP, source, source);
 			}
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Bind', target);
+			this.add('-anim', source, 'Crunch', target);
+		}, // For custom animations
 		target: "normal",
 		type: "Dragon",
 		contestType: "Tough",
@@ -22468,6 +22576,13 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 				this.heal(substituteHP, source, source);
 			}
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Bind', target);
+			this.add('-anim', source, 'Hex', target);
+		}, // For custom animations
 		target: "normal",
 		type: "Fairy",
 		contestType: "Beautiful",
@@ -22486,6 +22601,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 5,
 			volatileStatus: 'confusion',
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Night Shade', target);
+		}, // For custom animations
 		target: "normal",
 		type: "Dark",
 		zMove: { basePower: 140 },
@@ -22504,6 +22625,12 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			chance: 30,
 			volatileStatus: 'flinch',
 		},
+		onTryMove() {
+			this.attrLastMove('[still]'); // For custom animations
+		},
+		onPrepareHit(target, source) {
+			this.add('-anim', source, 'Shadow Punch', target);
+		}, // For custom animations
 		target: "any",
 		type: "Dark",
 		contestType: "Cool",
