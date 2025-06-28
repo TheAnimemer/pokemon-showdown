@@ -2445,7 +2445,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	megalite: {
 		name: "Megalite",
 		desc: "If the holder is capable of Mega Evolution, its Defense and Special Defense are multiplied by 1.3. This effect applies even if the Pokemon has not yet Mega Evolved.",
-		shortDesc: "If able to Mega Evolve: 1.3x Defense and Sp. Def.",
+		shortDesc: "If holder's species can Mega Evolve, its Defense and Sp. Def are 1.3x.",
 	},
 	radioantenna: {
 		name: "Radio Antenna",
