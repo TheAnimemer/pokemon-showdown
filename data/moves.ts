@@ -22346,9 +22346,8 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Camouflage', target);
 			this.add('-anim', source, 'Smart Strike', target);
-			this.add('-anim', target, 'Discharge', source);
+			this.add('-anim', target, 'Camouflage', source);
 		}, // For custom animations
 		secondary: null,
 		target: "normal",
@@ -22445,7 +22444,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		basePower: 75,
 		category: "Special",
 		name: "Sinful Nectar",
-		pp: 15,
+		pp: 10,
 		priority: 0,
 		flags: {contact: 1, protect: 1, mirror: 1, bypasssub: 1, metronome: 1},
 		onTryMove() {
@@ -22477,7 +22476,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Harden', source);
+			this.add('-anim', source, 'Sucker Punch', target);
 			this.add('-anim', source, 'Stone Edge', target);
 		}, // For custom animations
 		secondary: {
@@ -22558,7 +22557,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Bind', target);
+			this.add('-anim', source, 'Wrap', target);
 			this.add('-anim', source, 'Crunch', target);
 		}, // For custom animations
 		target: "normal",
