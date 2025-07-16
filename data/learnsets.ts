@@ -93843,6 +93843,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	fleaclipse: {
 		learnset: {
+			swordsdance: ["9M"],
 			nastyplot: ["9M"],
 			bugbuzz: ["9M"],
 			leechlife: ["9M"],

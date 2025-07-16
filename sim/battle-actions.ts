@@ -1877,6 +1877,14 @@ export class BattleActions {
 		if (item.megaEvolves === species.name && item.megaStone !== species.name) {
 			return item.megaStone;
 		}
+		// Allow Decidueye-Hisui to Mega Evolve into Decidueye-Mega with Deciduite
+		if ((species.name === 'Decidueye-Hisui' || species.name === 'Decidueye') && item.name === 'Deciduite') {
+			return 'Decidueye-Mega';
+		}
+		// Allow Quaquaval and Quaquaval-Tanoso to Mega Evolve into Quaquaval-Tanoso-Mega with Quaquavalite-T
+		if ((species.name === 'Quaquaval' || species.name === 'Quaquaval-Tanoso') && item.name === 'Quaquavalite-T') {
+			return 'Quaquaval-Tanoso-Mega';
+		}
 		return null;
 	}
 
