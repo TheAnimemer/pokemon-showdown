@@ -96843,7 +96843,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			surf: ["9M"],
 			icebeam: ["9M"],
 			aquaring: ["9M"],
-			bouncybubble: ["9M"],
 			raindance: ["9M"],
 			scald: ["9M"],
 			sludgebomb: ["9M"],
