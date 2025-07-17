@@ -1870,13 +1870,18 @@ export class BattleActions {
 		if (item.megaEvolves === species.name && item.megaStone !== species.name) {
 			return item.megaStone;
 		}
-		// Allow Decidueye-Hisui to Mega Evolve into Decidueye-Mega with Deciduite
+		// Allow alternate formes to Mega Evolve
 		if ((species.name === 'Decidueye-Hisui' || species.name === 'Decidueye') && item.name === 'Deciduite') {
 			return 'Decidueye-Mega';
 		}
-		// Allow Quaquaval and Quaquaval-Tanoso to Mega Evolve into Quaquaval-Tanoso-Mega with Quaquavalite-T
 		if ((species.name === 'Quaquaval' || species.name === 'Quaquaval-Tanoso') && item.name === 'Quaquavalite-T') {
 			return 'Quaquaval-Tanoso-Mega';
+		}
+		if ((species.name === 'Sceptile' || species.name === 'Sceptile-Tanoso') && item.name === 'Sceptilite-T') {
+			return 'Sceptile-Tanoso-Mega';
+		}
+		if ((species.name === 'Delphox' || species.name === 'Delphox-Tanoso') && item.name === 'Delphoxite-T') {
+			return 'Delphox-Tanoso-Mega';
 		}
 		return null;
 	}
