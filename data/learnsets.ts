@@ -97306,8 +97306,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	placeholder: {
 		learnset: {
-			splash: ["9M"],
-			happyhour: ["9M"],
+			scratch: ["9M"],
 		},
 	},
 
