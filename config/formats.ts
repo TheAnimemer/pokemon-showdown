@@ -988,6 +988,18 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		],
 	},
 	{
+		name: "[Gen 9] Mood Mons",
+		mod: 'moodmons',
+		searchShow: true,
+		ruleset: ['Standard', 'Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Endless Battle Clause'],
+		banlist: ['All Pokemon'],
+		unbanlist: [
+			// put ALL mood mons here
+			'Magcargo', 'Slugma', 'Sceptile', 'Sceptile-Tanoso', 'Sceptile-Tanoso-Mega',
+			'Obsidislug', 'Delphox', 'Delphox-Tanoso-Mega', 'Delphox-Tanoso',
+		],
+	},
+	{
 		name: "[Gen 7] Pure Hackmons",
 		desc: `Anything that can be hacked in-game and is usable in local battles is allowed.`,
 		mod: 'gen7',
