@@ -1,5 +1,9 @@
 export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable = {
-	spreetah: {
+	// Moodmons custom mons, currently placeholders.
+	// Should be replaced with actual mons or the file should be deleted if there are no new ones.
+	// These mons are not intended to be used in the format but are here for reference.
+	// Delete all placeholder mons when actual mons are added.
+	spreetah: {	
 		num: 2001,
 		name: "Spreetah",
 		types: ["Electric", "Fire"],

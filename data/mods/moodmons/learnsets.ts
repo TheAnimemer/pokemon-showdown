@@ -1,4 +1,6 @@
 export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTable = {
+	// Moodmons custom learnsets, currently placeholders
+	// Should be replaced with actual learnsets for the new mons
 	spreetah: {
 		learnset: {
 			agility: ["9L1"],

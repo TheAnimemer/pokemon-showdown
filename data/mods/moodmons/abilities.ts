@@ -1,4 +1,7 @@
 export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
+	// Moodmons custom abilities, currently placeholders
+	// Should be replaced with actual ability changes / fake abilities
+	// or the file should be deleted if there are no new ones.
 	troubled: {
 		onStart(source) {
 			source.addVolatile('troubled');
