@@ -991,7 +991,7 @@ export const Formats: import('../sim/dex-formats').FormatList = [
 		name: "[Gen 9] Mood Mons",
 		mod: 'moodmons',
 		searchShow: true,
-		ruleset: ['Evasion Abilities Clause', 'Sleep Moves Clause', '!Sleep Clause Mod', 'Species Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Endless Battle Clause'],
+		ruleset: ['Evasion Abilities Clause', 'Sleep Moves Clause', 'Species Clause', 'OHKO Clause', 'Evasion Moves Clause', 'Team Preview', 'HP Percentage Mod', 'Endless Battle Clause'],
 		banlist: ['All Pokemon'],
 		unbanlist: [
 			// put ALL mood mons here
