@@ -14,6 +14,6 @@ data/mods/moodmons/scripts.ts: Don't touch.
 
 ###Format config.
 
-config/formats.ts: https://github.com/TheAnimemer/pokemon-showdown/blob/cef0e2563e98ce8f44a74b7877fd97bfd8e1e9ad/config/formats.ts#L991
+config/formats.ts: https://github.com/TheAnimemer/pokemon-showdown/blob/37cd94fcd9c49651df47b3ed48f60364c017047e/config/formats.ts#L991
 
 It's this file that determines what is allowed in the actual playable format. All of your custom mons need to be put in the unbanlist here to be legal. this is also where clauses are determined for the tier. you can rename the format to whatever you like here as well.
