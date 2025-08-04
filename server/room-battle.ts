@@ -276,7 +276,6 @@ export class RoomBattleTimer {
 				// first request of a mid-turn request (U-turn or faint-switch)
 				this.isFirstRequest = false;
 				const addPerMidTurnRequest = Math.min(this.settings.addPerTurn, TICK_TIME);
-				this.battle.room.addRaw(`<!-- adding ${addPerMidTurnRequest} to each for mid turn request -->`);
 				for (const curPlayer of this.battle.players) {
 					curPlayer.secondsLeft += addPerMidTurnRequest;
 				}
@@ -302,14 +301,16 @@ export class RoomBattleTimer {
 			}
 		}
 
-		this.battle.room.addRaw(`<!-- adding ${addPerTurn} for new turn -->`);
 		for (const player of this.battle.players) {
 			player.secondsLeft = Math.min(player.secondsLeft + addPerTurn, this.settings.starting);
 		}
 	}
 	nextRequest(player: RoomBattlePlayer) {
 		if (player.secondsLeft <= 0) return;
-		if (player.request.isWait) return;
+		if (player.request.isWait) {
+			player.turnSecondsLeft = this.settings.maxPerTurn;
+			return;
+		}
 
 		if (this.timer) {
 			clearTimeout(this.timer);
@@ -802,7 +803,7 @@ export class RoomBattle extends RoomGame<RoomBattlePlayer> {
 				};
 				this.requestCount++;
 				player?.sendRoom(`|request|${requestJSON}`);
-				this.timer.nextRequest(player);
+				if (!request.update) this.timer.nextRequest(player);
 				break;
 			}
 			player?.sendRoom(lines[2]);
@@ -1376,7 +1377,9 @@ export const PM = new ProcessManager.StreamProcessManager(module, () => new Room
 
 if (!PM.isParentProcess) {
 	// This is a child process!
-	require('source-map-support').install();
+	try {
+		require('source-map-support').install();
+	} catch {}
 	global.Config = require('./config-loader').Config;
 	global.Dex = require('../sim/dex').Dex;
 	global.Monitor = {
