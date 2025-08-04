@@ -1,4 +1,5 @@
 export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormatsDataTable = {
+	// Moodmons mons, currently placeholders
 	aesap: {
 		tier: "OU",
 	},

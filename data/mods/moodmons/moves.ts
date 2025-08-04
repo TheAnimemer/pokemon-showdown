@@ -1,4 +1,7 @@
 export const Moves: import('../../../sim/dex-moves').ModdedMoveDataTable = {
+	// Moodmons custom moves, currently placeholders.
+	// Should be replaced with actual move changes / fake moves or
+	// or the file should be deleted if there are no new ones.
 	leechlife: {
 		inherit: true,
 		onModifyMove(move, pokemon) {
