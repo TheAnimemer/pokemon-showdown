@@ -107,7 +107,6 @@ export const Aliases: import('../sim/dex').AliasesTable = {
 	megacharizardy: "Charizard-Mega-Y",
 	yard: "Charizard-Mega-Y",
 	zardy: "Charizard-Mega-Y",
-	mdia: "Diancie-Mega",
 	megagard: "Gardevoir-Mega",
 	megacross: "Heracross-Mega",
 	megadoom: "Houndoom-Mega",
