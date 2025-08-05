@@ -6,7 +6,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 	anxiousoil: {
 		tier: "OU",
 	},
-	araquisis: {
+	cockalypse: {
 		tier: "OU",
 	},
 
