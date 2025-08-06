@@ -33,7 +33,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		types: ["Electric", "Dragon"],
 		genderRatio: { M: 0.50, F: 0.50 },
 		baseStats: { hp: 90, atk: 125, def: 85, spa: 107, spd: 65, spe: 85 },
-		abilities: { 0: "Big Pecks", 1: "Pickup", H: "Mold Breaker" },
+		abilities: { 0: "Big Pecks", 1: "Pika Climate", H: "Mold Breaker" },
 		heightm: 9,
 		weightkg: 463,
 		color: "Yellow",
