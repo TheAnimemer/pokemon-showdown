@@ -2338,4 +2338,11 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 
 		activate: "  [POKEMON] extends [MOVE] by 2 turns!",
 	},
+
+	// MOOD
+
+	pikaclimate: {
+		name: "Pika Climate",
+		shortDesc: "1/16th Chip when Rain is Active. 1/16th Chip when Electric Terrain is Active.",
+	},
 };
