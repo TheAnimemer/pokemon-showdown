@@ -5848,4 +5848,27 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 		rating: 3,
 		num: -3,
 	},
+	// MOOD ABILITIES
+	pikaclimate: {
+		onStart(pokemon) {
+			this.add('-ability', pokemon, 'Pika Climate');
+		},
+		onWeather(target, source, effect) {
+			if (target.hasItem('utilityumbrella')) return;
+			if (target.hasAbility('Pika Climate')) return;
+			if (effect.id === 'raindance' || effect.id === 'primordialsea') {
+				this.damage(target.baseMaxhp / 16, target, pokemon);
+			}
+		},
+	   onTerrainChange(pokemon) {
+			if (this.field.isTerrain('electricterrain')) {
+				if (target.hasAbility('Pika Climate')) return;
+				this.damage(target.baseMaxhp / 16, target, pokemon);
+			}
+		},
+		flags: {},
+		name: "Pika Climate",
+		rating: 2,
+		num: 94,
+	},
 };
