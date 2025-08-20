@@ -210,8 +210,6 @@ export class NetRequest {
 		if (response && response.statusCode !== 200) {
 			throw new HttpError(response.statusMessage || "Connection error", response.statusCode, await stream.readAll());
 		}
-		return stream.readAll();
-		}
 
 		return stream.readAll();
 	}
