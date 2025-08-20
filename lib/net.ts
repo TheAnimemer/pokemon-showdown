@@ -208,9 +208,9 @@ export class NetRequest {
 		const response = await stream.response;
 		if (response) this.response = response;
 		if (response && response.statusCode !== 200) {
-			// Don’t crash the server — just return empty or log
-			console.error(`NetRequest failed: ${response.statusCode} ${response.statusMessage}`);
-			return '';
+			throw new HttpError(response.statusMessage || "Connection error", response.statusCode, await stream.readAll());
+		}
+		return stream.readAll();
 		}
 
 		return stream.readAll();
