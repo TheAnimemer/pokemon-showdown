@@ -95682,7 +95682,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sleeppowder: ["9M"],
 			sludgebomb: ["9M"],
 			swordsdance: ["9M"],
-			synthesis: ["9M"],
 			trailblaze: ["9M"],
 			weatherball: ["9M"],
 			acidspray: ["9M"],
