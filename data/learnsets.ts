@@ -94192,6 +94192,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	scallywatt: {
 		learnset: {
+			scald: ["9M"],
 			zapcannon: ["9M"],
 			aquaring: ["9M"],
 			bounce: ["9M"],
@@ -94260,6 +94261,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	levireap: {
 		learnset: {
 			airslash: ["9M"],
+			hurricane: ["9M"],
+			sludgebomb: ["9M"],
+			fireblast: ["9M"],
+			thunderbolt: ["9M"],
+			icebeam: ["9M"],
 			willowisp: ["9M"],
 			shadowball: ["9M"],
 			hex: ["9M"],
@@ -96486,7 +96492,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			earthquake: ["9M"],
 			bulldoze: ["9M"],
 			brutalswing: ["9M"],
-			dragonclaw: ["9M"],
 			sunnyday: ["9M"],
 			facade: ["9M"],
 			endure: ["9M"],
