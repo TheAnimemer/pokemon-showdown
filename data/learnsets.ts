@@ -94126,6 +94126,9 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	saruglace: {
 		learnset: {
 			fakeout: ["9M"],
+			aurasphere: ["9M"],
+			focusblast: ["9M"],
+			vacuumwave: ["9M"],
 			quickattack: ["9M"],
 			attract: ["9M"],
 			block: ["9M"],
