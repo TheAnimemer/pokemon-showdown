@@ -7847,8 +7847,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		megaEvolves: "Delphox-Tanoso",
 		itemUser: ["Delphox-Tanoso"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+            if (!item.megaEvolves) return true;
+            const megaId = this.toID(item.megaEvolves);
+            // check baseSpecies base, baseSpecies full name, and current species name
+            if (megaId === this.toID(source.baseSpecies.baseSpecies) ||
+                megaId === this.toID(source.baseSpecies.name) ||
+                megaId === this.toID(source.species.name)) return false;
+            return true;
 		},
 		num: -1011,
 		gen: 6,
@@ -7860,8 +7865,13 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		megaEvolves: "Quaquaval-Tanoso",
 		itemUser: ["Quaquaval-Tanoso"],
 		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+            if (!item.megaEvolves) return true;
+            const megaId = this.toID(item.megaEvolves);
+            // check baseSpecies base, baseSpecies full name, and current species name
+            if (megaId === this.toID(source.baseSpecies.baseSpecies) ||
+                megaId === this.toID(source.baseSpecies.name) ||
+                megaId === this.toID(source.species.name)) return false;
+            return true;
 		},
 		num: -1012,
 		gen: 6,
