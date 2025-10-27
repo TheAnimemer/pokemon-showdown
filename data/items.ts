@@ -7815,9 +7815,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		megaStone: "Sceptile-Tanoso-Mega",
 		megaEvolves: "Sceptile-Tanoso",
 		itemUser: ["Sceptile-Tanoso"],
-		onTakeItem(item, source) {
-			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
-			return true;
+        onTakeItem(item, source) {
+            if (!item.megaEvolves) return true;
+            const megaId = this.toID(item.megaEvolves);
+            // check baseSpecies base, baseSpecies full name, and current species name
+            if (megaId === this.toID(source.baseSpecies.baseSpecies) ||
+                megaId === this.toID(source.baseSpecies.name) ||
+                megaId === this.toID(source.species.name)) return false;
+            return true;
 		},
 		num: -1009,
 		gen: 6,
