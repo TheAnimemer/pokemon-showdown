@@ -2728,7 +2728,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	latiosmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "OU",
+		natDexTier: "(OU)",
 	},
 	kyogre: {
 		tier: "Uber",
