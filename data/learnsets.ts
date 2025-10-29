@@ -96889,6 +96889,11 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			leafblade: ["9M"],
 			leafage: ["9M"],
 			woodhammer: ["9M"],
+			tackle: ["9M"],
+			feint: ["9M"],
+			bodyslam: ["9M"],
+			bind: ["9M"],
+			doubleslap: ["9M"],
 		},
 	},
 	piracron: {
