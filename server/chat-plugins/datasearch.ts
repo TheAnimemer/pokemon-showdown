@@ -725,6 +725,7 @@ function runDexsearch(target: string, cmd: string, message: string, isTest: bool
 		mineral: 'Mineral',
 		monster: 'Monster',
 		undiscovered: 'Undiscovered',
+		tanoso: 'Tanoso',
 		water1: 'Water 1',
 		water2: 'Water 2',
 		water3: 'Water 3',

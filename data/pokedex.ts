@@ -18513,7 +18513,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		color: "Black",
 		prevo: "Magcargo",
 		evoLevel: 52,
-		eggGroups: ["Dragon"],
+		eggGroups: ["Dragon", "Tanoso"],
 	},
 	chaynzor: {
 		num: -1002,
