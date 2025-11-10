@@ -4047,7 +4047,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	greninja: {
 		tier: "UU",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	greninjaash: {
 		isNonstandard: "Past",
@@ -4873,7 +4873,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	xurkitree: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	celesteela: {
 		isNonstandard: "Past",
