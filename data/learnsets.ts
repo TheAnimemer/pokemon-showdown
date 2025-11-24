@@ -94782,7 +94782,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			constrict: ["9M"],
 			comeuppance: ["9M"],
 			skydrop: ["9M"],
-			nightdaze: ["9M"],
 			twister: ["9M"],
 			venoshock: ["9M"],
 			ominouswind: ["9M"],
