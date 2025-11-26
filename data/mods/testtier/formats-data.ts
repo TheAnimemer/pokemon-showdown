@@ -271,9 +271,7 @@ export const FormatsData: import('../../../sim/dex-species').ModdedSpeciesFormat
 		natDexTier: "OU",
 	},
 	regidragomega: {
-		tier: "OU",
-		doublesTier: "DOU",
-		natDexTier: "Uber",
+		tier: "Illegal",
 	},
 	zangoosemega: {
 		tier: "OU",
