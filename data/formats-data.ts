@@ -198,7 +198,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	hessifeng: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UU",
+		natDexTier: "UUBL",
 	},
 	primarinamega: {
 		tier: "Uber",
