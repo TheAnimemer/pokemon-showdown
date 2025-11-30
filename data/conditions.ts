@@ -892,17 +892,6 @@ export const Conditions: import('../sim/dex-conditions').ConditionDataTable = {
 			return bp;
 		},
 	},
-	remedialooze: {
-    duration: 1,
-    onBeforeSwitchOut(pokemon) {
-        this.debug('Remedial Ooze triggers');
-        for (const source of this.effectState.sources) {
-            if (!source.isAdjacent(pokemon) || !source.hp) continue;
-            source.heal(source.baseMaxhp / 4);
-            this.add('-message', `${source.name} absorbed nutrients with Remedial Ooze!`);
-        	}
-    	},
-	},
 	blastpuke: {
 		name: 'Blast Puke',
 		noCopy: true,
