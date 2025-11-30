@@ -5759,7 +5759,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 			const amount = Math.floor(holder.baseMaxhp / 4);
 			if (this.heal(amount, holder)) {
 				this.add('-activate', holder, 'ability: Remedial Ooze');
-				this.add('-message', `${holder.name} absorbed nutrients with Remedial Ooze!`);
 			}
 		},
         flags: {},
