@@ -5737,12 +5737,13 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
   		num: -1009, 
 	},
 	festeringcloak: {
+    	onAnySwitchInPriority: -2,
     	onAnySwitchIn(pokemon) {
         	const holder = this.effectState?.target;
-        	if (!holder || !holder.hp || !holder.isActive || pokemon.side === holder.side) return;
+        	if (!holder || !holder.hp || pokemon.side === holder.side) return;
         	if (!pokemon.isActive || !pokemon.hp || pokemon.isSemiInvulnerable()) return;
         	this.add('-activate', holder, 'ability: Festering Cloak');
-        	this.damage(pokemon.baseMaxhp / 12, pokemon, holder);
+        	this.damage(this.trunc(pokemon.baseMaxhp / 12), pokemon, holder);
     	},
     	flags: {},
     	name: "Festering Cloak",
