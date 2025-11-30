@@ -5751,21 +5751,21 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
   		num: -1010,
 	},
 	remedialooze: {
-		onSwitchOut(pokemon) {
-			pokemon.heal(pokemon.baseMaxhp / 4);
-        	this.add('-message', `${pokemon.name} absorbed nutrients with Remedial Ooze!`);
-		},
 		onAnySwitchOut(switchedPokemon) {
-			const holder = this.effectState.target;
+			// find the Pokémon that has this ability
+			const holder = this.effectState?.target;
 			// only trigger when an opponent (not the holder's own side) switches out
 			if (!holder || !holder.hp || switchedPokemon.side === holder.side) return;
-			holder.heal(holder.baseMaxhp / 4);
-			this.add('-message', `${holder.name} absorbed nutrients with Remedial Ooze!`);
+			const amount = Math.floor(holder.baseMaxhp / 4);
+			if (this.heal(amount, holder)) {
+				this.add('-activate', holder, 'ability: Remedial Ooze');
+				this.add('-message', `${holder.name} absorbed nutrients with Remedial Ooze!`);
+			}
 		},
         flags: {},
-          name: "Remedial Ooze",
-          rating: 3,
-          num: -1011,
+        name: "Remedial Ooze",
+        rating: 3,
+        num: -1011,
     },
 
 	// CAP
