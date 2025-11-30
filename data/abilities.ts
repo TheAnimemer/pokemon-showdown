@@ -5737,18 +5737,17 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
   		num: -1009, 
 	},
 	festeringcloak: {
-  		onSwitchIn(pokemon) {
-    		// Check if the active foe has Festering Cloak
-    		for (const active of pokemon.side.foe.active) {
-      			if (active?.ability === 'festeringcloak' && active.volatiles['festeringcloak']) {
-        			active.volatiles['festeringcloak'].switchedIn.add(pokemon);
-      			}
-    		}
-  		},
-		flags: {},
-  		name: "Festering Cloak",
-  		rating: 3,
-  		num: -1010,
+    	onFoeAfterSwitchInSelf(source) {
+        	const target = this.effectState.target;
+        	if (!source || !source.hp || !source.isActive || source.isSemiInvulnerable()) return;
+        	const amount = Math.floor(source.baseMaxhp / 12);
+			this.add('-activate', source, 'ability: Festering Cloak');
+        	this.damage(amount, source, target);
+    	},
+    	flags: {},
+    	name: "Festering Cloak",
+    	rating: 3,
+    	num: -1010,
 	},
 	remedialooze: {
 		onAnySwitchOut(switchedPokemon) {
