@@ -95656,6 +95656,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	witheroot: {
 		learnset: {
+			knockoff: ["9M"],
 			toxic: ["9M"],
 			protect: ["9M"],
 			substitute: ["9M"],
