@@ -22453,7 +22453,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 			this.attrLastMove('[still]'); // For custom animations
 		},
 		onPrepareHit(target, source) {
-			this.add('-anim', source, 'Sucker Punch', target);
+			this.add('-anim', target, 'Ivy Cudgel Rock', source);
 			this.add('-anim', source, 'Stone Edge', target);
 		}, // For custom animations
 		secondary: {
