@@ -7682,7 +7682,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	powersash: {
 		name: "Power Sash",
-		spritenum: 132,
+		spritenum: 30,
 		fling: { basePower: 20 },
 		onBasePower(basePower, attacker, defender, move) {
 			// If already used, skip
@@ -7705,7 +7705,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	
 	megalite: {
 		name: "Megalite",
-		spritenum: 287,
+		spritenum: 488,
 		fling: { basePower: 30 },
 		onModifyDef(def, pokemon) {
 			const species = pokemon.baseSpecies;
@@ -7736,7 +7736,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	radioantenna: {
 		name: "Radio Antenna",
-		spritenum: 236,
+		spritenum: 460,
 		fling: { basePower: 60 },
 		onAfterHit(target, source, move) {
 			console.log(`[Radio Antenna] onAfterHit triggered`);
@@ -7759,7 +7759,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},
 	callingcard: {
 		name: "Calling Card",
-		spritenum: 387,
+		spritenum: 361,
 		fling: { basePower: 10 },
 		onSwitchOut(pokemon) {
 			if (!pokemon.isActive || pokemon.hp <= 0) return;
@@ -7797,7 +7797,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	
 	ackleberry: {
 		name: "Ackle Berry",
-		spritenum: 262,
+		spritenum: 362,
 		fling: { basePower: 10 },
 		onSwitchOut(pokemon) {
 			if (pokemon.hp < pokemon.maxhp && pokemon.hasItem('ackleberry')) {
