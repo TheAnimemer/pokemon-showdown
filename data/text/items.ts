@@ -2450,12 +2450,12 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	radioantenna: {
 		name: "Radio Antenna",
 		desc: "When the holder uses or is hit by a contact move, the target is affected with interference for 5 turns. During this time, the affected Pokémon's held item has no effect, regardless of which side initiated contact.",
-		shortDesc: "On contact: disables foe's item for 5 turns.",
+		shortDesc: "When the holder uses or is hit by a contact move, disables foe's item for 5 turns.",
 	},
 	callingcard: {
 		name: "Calling Card",
 		desc: "When the holder switches out, all opposing Pokémon are afflicted with Taunt. Single use.",
-		shortDesc: "On switch-out: Taunts foes. Single use.",
+		shortDesc: "Taunts foes on switch out. Single use.",
 	},
 	ejectorboots: {
 		name: "Ejector Boots",
