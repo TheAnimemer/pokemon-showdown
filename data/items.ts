@@ -7705,7 +7705,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	
 	megalite: {
 		name: "Megalite",
-		spritenum: 488,
+		spritenum: 129,
 		fling: { basePower: 30 },
 		onModifyDef(def, pokemon) {
 			const species = pokemon.baseSpecies;
