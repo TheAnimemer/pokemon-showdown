@@ -7775,7 +7775,7 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	},	
 	ejectorboots: {
 		name: "Ejector Boots",
-		spritenum: 715,
+		spritenum: 478,
 		fling: { basePower: 30 },
 		onResidualOrder: 29,
 		onResidual(pokemon) {
