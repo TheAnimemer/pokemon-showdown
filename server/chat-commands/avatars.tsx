@@ -225,6 +225,7 @@ function listUsers(users: string[]) {
 
 const OFFICIAL_AVATARS = new Set([
 	'anicusty',
+	'illouri',
 	'aaron',
 	'acetrainercouple-gen3', 'acetrainercouple',
 	'acetrainerf-gen1', 'acetrainerf-gen1rb', 'acetrainerf-gen2', 'acetrainerf-gen3', 'acetrainerf-gen3rs', 'acetrainerf-gen4dp', 'acetrainerf-gen4', 'acetrainerf',
