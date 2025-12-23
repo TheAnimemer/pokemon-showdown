@@ -19245,7 +19245,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1042,
 		name: "Kazehiro",
 		types: ["Flying", "Fighting"],
-		baseStats: {hp: 101, atk: 110, def: 90, spa: 110, spd: 90, spe: 100},
+		baseStats: {hp: 100, atk: 110, def: 90, spa: 110, spd: 90, spe: 100},
 		abilities: {0: "Wind Rider"},
 		heightm: 1,
 		weightkg: 80,
