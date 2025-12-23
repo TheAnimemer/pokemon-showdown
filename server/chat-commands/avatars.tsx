@@ -234,7 +234,7 @@ const OFFICIAL_AVATARS = new Set([
 	'cozyglow',
 	'bananabro',
 	'colupissing',
-	'aaron',
+	'medih',
 	'acetrainercouple-gen3', 'acetrainercouple',
 	'acetrainerf-gen1', 'acetrainerf-gen1rb', 'acetrainerf-gen2', 'acetrainerf-gen3', 'acetrainerf-gen3rs', 'acetrainerf-gen4dp', 'acetrainerf-gen4', 'acetrainerf',
 	'acetrainer-gen1', 'acetrainer-gen1rb', 'acetrainer-gen2', 'acetrainer-gen3jp', 'acetrainer-gen3', 'acetrainer-gen3rs', 'acetrainer-gen4dp', 'acetrainer-gen4', 'acetrainer',
