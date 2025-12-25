@@ -224,11 +224,18 @@ function listUsers(users: string[]) {
 }
 
 const OFFICIAL_AVATARS = new Set([
+	'custy192',
+	'custy601',
+	'custy302',
+	'custy124',
+	'custy274',
+	'custy598',
 	'anicusty',
 	'lillouri',
 	'dbd-hobbes',
 	'trufs-reality',
 	'smallcocke',
+	'roymustang',
 	'yanis',
 	'pdewwy',
 	'oneris',
