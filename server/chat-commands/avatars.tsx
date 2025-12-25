@@ -226,6 +226,7 @@ function listUsers(users: string[]) {
 const OFFICIAL_AVATARS = new Set([
 	'anicusty',
 	'lillouri',
+	'dbd-hobbes',
 	'trufs-reality',
 	'smallcocke',
 	'yanis',
