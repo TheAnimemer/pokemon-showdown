@@ -18749,7 +18749,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Shamarion",
 		types: ["Dark", "Fairy"],
 		baseStats: {hp: 96, atk: 80, def: 129, spa: 99, spd: 87, spe: 107},
-		abilities: {0: "Prankster", H: "Neo Armor"},
+		abilities: {0: "Neo Armor"},
 		heightm: 3.2,
 		weightkg: 97,
 		color: "Purple",

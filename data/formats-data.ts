@@ -273,7 +273,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	regidragomega: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "OU",
+		natDexTier: "Uber",
 	},
 	zangoosemega: {
 		tier: "OU",
