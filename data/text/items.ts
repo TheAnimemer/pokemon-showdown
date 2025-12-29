@@ -2440,7 +2440,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	powersash: {
 		name: "Power Sash",
 		desc: "When the holder uses its first same-type attack, the move receives a 2x STAB boost instead of 1.5x. If the holder has the Adaptability Ability, the STAB boost becomes 2.5x instead. Single user.",
-		shortDesc: "First STAB move is 2x power. Single use.",
+		shortDesc: "First STAB is 2x power. Single use.",
 	},
 	megalite: {
 		name: "Megalite",
