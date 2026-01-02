@@ -2439,8 +2439,8 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	powersash: {
 		name: "Power Sash",
-		desc: "When the holder uses its first same-type attack, the move receives a 2x STAB boost instead of 1.5x. If the holder has the Adaptability Ability, the STAB boost becomes 2.5x instead. Single user.",
-		shortDesc: "First STAB is 2x power. Single use.",
+		desc: "When the holder uses its first same-type attack, the move receives a 2x STAB boost instead of 1.5x. If the holder has the Adaptability Ability, the STAB boost becomes 2.5x instead. Single use.",
+		shortDesc: "First STAB is 2x instead of 1.5x; 2.5x if Adaptability. Single use.",
 	},
 	megalite: {
 		name: "Megalite",
@@ -2459,7 +2459,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ejectorboots: {
 		name: "Ejector Boots",
-		desc: "If the holder becomes Confused, Taunted, Infatuated, Encored, or Disabled, it immediately switches out. This effect only activates once per status condition and does not trigger if the holder cannot switch out.",
+		desc: "If the holder becomes affected by Confusion, Taunt, Infatuation, Encore, or Disable, it immediately switches out. This effect only activates once per status condition and does not trigger if the holder cannot switch out.",
 		shortDesc: "Switches out if affected by Confusion, Taunt, Infatuation, Encore, or Disable.",
 	},
 	ackleberry: {
