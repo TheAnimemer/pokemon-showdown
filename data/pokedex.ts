@@ -19223,7 +19223,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		num: -1040,
 		name: "Liliamp",
 		types: ["Water", "Grass"],
-		baseStats: {hp: 80, atk: 75, def: 80, spa: 90, spd: 100, spe: 132},
+		baseStats: {hp: 80, atk: 75, def: 80, spa: 90, spd: 100, spe: 116},
 		abilities: {0: "Neutralizing Gas"},
 		heightm: 1,
 		weightkg: 45,
