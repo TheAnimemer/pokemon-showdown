@@ -18792,7 +18792,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		name: "Cryoctagon",
 		types: ["Ice"],
 		baseStats: {hp: 85, atk: 40, def: 80, spa: 105, spd: 140, spe: 95},
-		abilities: {0: "Snow Warning"},
+		abilities: {0: "Refrigerate"},
 		heightm: 1.4,
 		weightkg: 160,
 		color: "Blue",
