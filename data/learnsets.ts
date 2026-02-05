@@ -93640,6 +93640,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			doubleteam: ["7M", "7V", "6M", "5M", "4M", "3M"],
 			dracometeor: ["9M"],
 			dragoncheer: ["9M"],
+			dragonpulse: ["9M"],
 			earthpower: ["9M", "9L1", "7T", "7L1", "6T", "6L1", "5T", "5L67", "4T", "4L66"],
 			earthquake: ["9M", "7M", "7V", "6M", "5M", "4M", "3M", "3S0"],
 			ember: ["9L1", "7L1", "7V", "6L1", "5L1", "4L1", "3L1"],
@@ -93672,6 +93673,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			naturalgift: ["4M"],
 			naturepower: ["7M", "6M"],
 			overheat: ["9M", "7M", "6M", "5M", "4M", "3M"],
+			outrage: ["9M"],
 			painsplit: ["9M", "7T", "6T", "5T", "4T"],
 			powergem: ["9M"],
 			protect: ["9M", "7M", "7V", "6M", "5M", "4M", "3M"],
@@ -94022,6 +94024,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	lizendro: {
 		learnset: {
+			dragonclaw: ["9M"],
 			toxic: ["9M"],
 			tackle: ["9M"],
 			astonish: ["9M"],
