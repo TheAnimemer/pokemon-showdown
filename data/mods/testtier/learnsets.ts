@@ -94026,6 +94026,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	lizendro: {
 		learnset: {
+			dragonclaw: ["9M"],
 			toxic: ["9M"],
 			tackle: ["9M"],
 			astonish: ["9M"],
