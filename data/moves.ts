@@ -22629,9 +22629,7 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
 		volatileStatus: 'radioantenna',
 		condition: {
-			duration: 5,
 			onStart(pokemon) {
-				this.add('-start', pokemon, 'Radio Antenna');
 				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
 			},
 			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
