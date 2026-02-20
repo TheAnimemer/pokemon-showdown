@@ -7798,13 +7798,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 	ackleberry: {
 		name: "Ackle Berry",
 		spritenum: 362,
+		isBerry: true,
 		fling: { basePower: 10 },
 		onSwitchOut(pokemon) {
-			if (pokemon.hp < pokemon.maxhp && pokemon.hasItem('ackleberry')) {
-				this.heal(pokemon.baseMaxhp / 3, pokemon);
-				this.add('-useitem', pokemon, 'Ackle Berry');
-				pokemon.useItem();
+			if (pokemon.hp < pokemon.maxhp) {
+				pokemon.eatItem();
 			}
+		},
+		onTryEatItem(item, pokemon) {
+			if (!this.runEvent('TryHeal', pokemon, null, this.effect, pokemon.baseMaxhp / 3)) {
+				return false;
+			}
+		},
+		onEat(pokemon) {
+			this.heal(pokemon.baseMaxhp / 3, pokemon);
 		},
 		num: -1008,
 		gen: 9,
