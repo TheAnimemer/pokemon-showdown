@@ -7739,14 +7739,14 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 460,
 		fling: { basePower: 60 },
 		onDamagingHit(damage, target, source, move) {
-			if (move.flags['contact'] && source.item && !source.volatiles['embargo']) {
-				source.addVolatile('embargo', target);
+			if (move.flags['contact'] && source.item && !source.volatiles['radioantenna']) {
+				source.addVolatile('radioantenna', target);
 				this.add('-activate', target, 'item: Radio Antenna', source);
 			}
 		},
 		onSourceDamagingHit(damage, target, source, move) {
-			if (move.flags['contact'] && target.item && !target.volatiles['embargo']) {
-				target.addVolatile('embargo', source);
+			if (move.flags['contact'] && target.item && !target.volatiles['radioantenna']) {
+				target.addVolatile('radioantenna', source);
 				this.add('-activate', source, 'item: Radio Antenna', target);
 			}
 		},

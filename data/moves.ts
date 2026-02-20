@@ -22617,6 +22617,35 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		type: "Dark",
 		contestType: "Cool",
 	},
+	radioantenna: {
+		num: -1111,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		isNonstandard: "Past",
+		name: "Radio Antenna",
+		pp: 15,
+		priority: 0,
+		flags: { protect: 1, reflectable: 1, mirror: 1, metronome: 1 },
+		volatileStatus: 'radioantenna',
+		condition: {
+			duration: 5,
+			onStart(pokemon) {
+				this.add('-start', pokemon, 'Radio Antenna');
+				this.singleEvent('End', pokemon.getItem(), pokemon.itemState, pokemon);
+			},
+			// Item suppression implemented in Pokemon.ignoringItem() within sim/pokemon.js
+			onResidualOrder: 21,
+			onEnd(pokemon) {
+				this.add('-end', pokemon, 'Radio Antenna');
+			},
+		},
+		secondary: null,
+		target: "normal",
+		type: "Dark",
+		zMove: { boost: { spa: 1 } },
+		contestType: "Clever",
+	},
 
 	// CAP moves
 
