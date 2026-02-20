@@ -7738,20 +7738,16 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		name: "Radio Antenna",
 		spritenum: 460,
 		fling: { basePower: 60 },
-		onAfterHit(target, source, move) {
-			console.log(`[Radio Antenna] onAfterHit triggered`);
-			console.log(`Move: ${move.name}, Target: ${target.name}, Source: ${source.name}`);
-			if (move.flags['contact'] && target.item === 'radioantenna' && source.item) {
-				source.addVolatile('embargo');
-				this.add('-activate', source, 'item: Radio Antenna');
+		onDamagingHit(damage, target, source, move) {
+			if (move.flags['contact'] && source.item && !source.volatiles['embargo']) {
+				source.addVolatile('embargo', target);
+				this.add('-activate', target, 'item: Radio Antenna', source);
 			}
 		},
-		onSourceAfterHit(target, source, move) {
-			console.log(`[Radio Antenna] onSourceAfterHit triggered`);
-			console.log(`Move: ${move.name}, Source: ${source.name}, Target: ${target.name}`);
-			if (move.flags['contact'] && source.item === 'radioantenna' && target.item) {
-				target.addVolatile('embargo');
-				this.add('-activate', target, 'item: Radio Antenna');
+		onSourceDamagingHit(damage, target, source, move) {
+			if (move.flags['contact'] && target.item && !target.volatiles['embargo']) {
+				target.addVolatile('embargo', source);
+				this.add('-activate', source, 'item: Radio Antenna', target);
 			}
 		},
 		num: -1005,
