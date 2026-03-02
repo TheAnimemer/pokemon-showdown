@@ -7796,16 +7796,20 @@ export const Items: import('../sim/dex-items').ItemDataTable = {
 		spritenum: 362,
 		isBerry: true,
 		fling: { basePower: 10 },
-		onSwitchOut(pokemon) {
-			if (pokemon.hp < pokemon.maxhp) {
-				pokemon.eatItem();
-			}
+		naturalGift: {
+			basePower: 80,
+			type: "Grass",
 		},
-		onTryEatItem(item, pokemon) {
-			if (!this.runEvent('TryHeal', pokemon, null, this.effect, pokemon.baseMaxhp / 3)) {
-				return false;
-			}
-		},
+    	onSwitchOut(pokemon) {
+        	if (pokemon.hp <= pokemon.maxhp * 3 / 4) {
+            	pokemon.eatItem();
+        	}
+    	},
+    	onTryEatItem(item, pokemon) {
+        	if (!this.runEvent('TryHeal', pokemon, null, this.effect, pokemon.baseMaxhp / 3)) {
+            	return false;
+        	}
+    	},
 		onEat(pokemon) {
 			this.heal(pokemon.baseMaxhp / 3, pokemon);
 		},
