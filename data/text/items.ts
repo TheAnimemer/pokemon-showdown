@@ -2464,7 +2464,7 @@ export const ItemsText: { [id: IDEntry]: ItemText } = {
 	},
 	ackleberry: {
 		name: "Ackle Berry",
-		shortDesc: "Restores 1/3 max HP on switch-out if the user is below 100% HP. Single use.",
+		shortDesc: "Restores 1/3 max HP at 3/4 max HP or less. Single use.",
 	},
 	sceptilitet: {
 		name: "Sceptilite-T",
