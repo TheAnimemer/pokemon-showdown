@@ -1,42 +1,44 @@
 export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable = {
-	froslassmega: {
-		inherit: true,
-		baseStats: {hp: 70, atk: 81, def: 81, spa: 130, spd: 81, spe: 137},
-	},
-	serposa: {
-		inherit: true,
-		baseStats: {hp: 79, atk: 72, def: 92, spa: 117, spd: 66, spe: 114},
-	},
 	sinester: {
 		inherit: true,
-		baseStats: {hp: 95, atk: 120, def: 95, spa: 55, spd: 115, spe: 111},
+		baseStats: {hp: 95, atk: 120, def: 95, spa: 55, spd: 115, spe: 120},
 	},
-	sceptiletanoso: {
+	weaviletanoso: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 128, def: 80, spa: 85, spd: 68, spe: 104},
+		baseStats: {hp: 70, atk: 65, def: 45, spa: 125, spd: 85, spe: 120},
 	},
-	sceptiletanosomega: {
+	liliamp: {
 		inherit: true,
-		baseStats: {hp: 65, atk: 155, def: 90, spa: 108, spd: 90, spe: 122},
+		baseStats: {hp: 80, atk: 75, def: 80, spa: 90, spd: 100, spe: 132},
 	},
-	quaquavaltanoso: {
+	raitenna: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 110, def: 90, spa: 83, spd: 83, spe: 74},
+		baseStats: {hp: 70, atk: 115, def: 55, spa: 115, spd: 55, spe: 124},
 	},
-	delphoxtanosomega: {
+	impharie: {
 		inherit: true,
-		baseStats: {hp: 80, atk: 88, def: 90, spa: 145, spd: 122, spe: 109},
+		baseStats: {hp: 75, atk: 90, def: 80, spa: 115, spd: 90, spe: 121},
 	},
-	diatridon: {
+	ribbixie: {
 		inherit: true,
-		baseStats: {hp: 100, atk: 100, def: 92, spa: 100, spd: 105, spe: 103},
+		baseStats: {hp: 120, atk: 100, def: 115, spa: 30, spd: 80, spe: 90},
+		abilities: {0: "Water Absorb", H: "Magic Bounce"},
 	},
-	scaldra: {
+	cormatose: {
 		inherit: true,
-		baseStats: {hp: 75, atk: 117, def: 74, spa: 86, spd: 74, spe: 114},
+		baseStats: {hp: 105, atk: 85, def: 100, spa: 85, spd: 100, spe: 85},
 	},
-	pallapad: {
+	obsidislug: {
 		inherit: true,
-		baseStats: {hp: 125, atk: 95, def: 72, spa: 77, spd: 85, spe: 78},
+		baseStats: {hp: 105, atk: 60, def: 150, spa: 100, spd: 95, spe: 20},
+		abilities: {0: "Magma Armor", 1: "Rough Skin", H: "Shell Armor"},
 	},
-};
+	infestalk: {
+		inherit: true,
+		baseStats: {hp: 94, atk: 92, def: 130, spa: 58, spd: 91, spe: 65},
+	},
+	quaquavaltanosos: {
+		inherit: true,
+		baseStats: {hp: 85, atk: 110, def: 76, spa: 71, spd: 108, spe: 75},
+	},
+}; 

@@ -93795,10 +93795,10 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			storedpower: ["9M"],
 			aurasphere: ["9M"],
 			magiccoat: ["9M"],
-			moonlight: ["9M"],
+//			moonlight: ["9M"],
 			psychic: ["9M"],
 			trick: ["9M"],
-			wish: ["9M"],
+//			wish: ["9M"],
 			voltswitch: ["9M"],
 			lightscreen: ["9M"],
 			knockoff: ["9M"],
@@ -94434,7 +94434,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			moonblast: ["9M"],
 			drainingkiss: ["9M"],
-			calmmind: ["9M"],
+//			calmmind: ["9M"], 
 			playrough: ["9M"],
 			dazzlinggleam: ["9M"],
 			fairywind: ["9M"],
@@ -94552,6 +94552,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	raitenna: {
 		learnset: {
+			wildcharge: ["9M"],
 			electricpiercer: ["9M"],
 			signalbeam: ["9M"],
 			bugbuzz: ["9M"],
@@ -96534,7 +96535,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			sinfulnectar: ["9M"],
 			endure: ["9M"],
-			moonblast: ["9M"],
+//			moonblast: ["9M"],
 			hydropump: ["9M"],
 			surf: ["9M"],
 			scald: ["9M"],
@@ -96825,6 +96826,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 	},
 	liliamp: {
 		learnset: {
+//			calmmind: ["9M"],
 			substitute: ["9M"],
 			protect: ["9M"],
 			terablast: ["9M"],
@@ -96855,7 +96857,6 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 			shadowball: ["9M"],
 			knockoff: ["9M"],
 			silverwind: ["9M"],
-			calmmind: ["9M"],
 			absorb: ["9M"],
 			vinewhip: ["9M"],
 			razorleaf: ["9M"],
