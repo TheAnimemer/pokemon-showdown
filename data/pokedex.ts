@@ -18776,7 +18776,7 @@ export const Pokedex: import('../sim/dex-species').SpeciesDataTable = {
 		baseSpecies: "Sceptile",
 		forme: "Tanoso",
 		types: ["Dragon", "Electric"],
-		baseStats: {hp: 65, atk: 128, def: 80, spa: 85, spd: 68, spe: 104},
+		baseStats: {hp: 65, atk: 118, def: 80, spa: 85, spd: 78, spe: 104},
 		abilities: {0: "Lightning Rod", H: "Tough Claws"},
 		heightm: 1.7,
 		weightkg: 52.2,
