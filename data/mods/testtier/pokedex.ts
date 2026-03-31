@@ -39,6 +39,6 @@ export const Pokedex: import('../../../sim/dex-species').ModdedSpeciesDataTable 
 	},
 	quaquavaltanoso: {
 		inherit: true,
-		baseStats: {hp: 85, atk: 110, def: 76, spa: 71, spd: 108, spe: 75},
+		baseStats: {hp: 85, atk: 110, def: 81, spa: 66, spd: 108, spe: 75},
 	},
 }; 
