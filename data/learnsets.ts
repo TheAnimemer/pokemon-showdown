@@ -97447,7 +97447,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			thunderbolt: ["9M"],
 			triattack: ["9M"],
 			voltswitch: ["9M"],
-			calmind: ["9M"],
+			calmmind: ["9M"],
 			encore: ["9M"],
 			lightscreen: ["9M"],
 			protect: ["9M"],
