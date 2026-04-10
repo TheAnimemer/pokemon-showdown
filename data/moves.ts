@@ -22644,6 +22644,44 @@ export const Moves: import('../sim/dex-moves').MoveDataTable = {
 		zMove: { boost: { spa: 1 } },
 		contestType: "Clever",
 	},
+	spectrebash: {
+		num: -1112,
+		accuracy: 100,
+		basePower: 85,
+		category: "Physical",
+		name: "Spectre Bash",
+		pp: 10,
+		priority: 0,
+		flags: { protect: 1, mirror: 1, metronome: 1 },
+		secondary: {
+			chance: 10,
+			volatileStatus: 'flinch',
+		},
+		target: "normal",
+		type: "Ghost",
+		contestType: "Tough",
+	},
+	peerassault: {
+		num: -1113,
+		accuracy: 95,
+		basePower: 120,
+		category: "Physical",
+		name: "Peer Assault",
+		pp: 5,
+		priority: 0,
+		flags: { contact: 1, protect: 1, mirror: 1, metronome: 1 },
+		onModifyType(move, pokemon) {
+			const types = pokemon.getTypes();
+			let type = types[0];
+			if (type === 'Bird') type = '???';
+			if (type === '???' && types[1]) type = types[1];
+			move.type = type;
+		},
+		secondary: null,
+		target: "normal",
+		type: "Normal",
+		contestType: "Clever",
+	},
 
 	// CAP moves
 

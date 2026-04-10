@@ -158,7 +158,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Beads of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Special Defense multiplied by 0.75.",
 
-		start: "  [POKEMON]'s Beads of Ruin weakened the Sp. Def of all surrounding Pokémon!",
+		start: "  [POKEMON]'s Beads of Ruin weakened the Sp. Def of all surrounding Pokemon!",
 	},
 	beastboost: {
 		name: "Beast Boost",
@@ -1912,7 +1912,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Sword of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Defense multiplied by 0.75.",
 
-		start: "  [POKEMON]'s Sword of Ruin weakened the Defense of all surrounding Pokémon!",
+		start: "  [POKEMON]'s Sword of Ruin weakened the Defense of all surrounding Pokemon!",
 	},
 	symbiosis: {
 		name: "Symbiosis",
@@ -1939,7 +1939,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Tablets of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Attack multiplied by 0.75.",
 
-		start: "  [POKEMON]'s Tablets of Ruin weakened the Attack of all surrounding Pokémon!",
+		start: "  [POKEMON]'s Tablets of Ruin weakened the Attack of all surrounding Pokemon!",
 	},
 	tangledfeet: {
 		name: "Tangled Feet",
@@ -2144,7 +2144,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Vessel of Ruin",
 		shortDesc: "Active Pokemon without this Ability have their Special Attack multiplied by 0.75.",
 
-		start: "  [POKEMON]'s Vessel of Ruin weakened the Sp. Atk of all surrounding Pokémon!",
+		start: "  [POKEMON]'s Vessel of Ruin weakened the Sp. Atk of all surrounding Pokemon!",
 	},
 	victorystar: {
 		name: "Victory Star",
@@ -2316,6 +2316,19 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 		name: "Remedial Ooze",
 		desc: "This Pokemon restores 1/4 of its maximum HP, rounded down, whenever an opposing Pokemon switches out. This effect does not activate on KO.",
 		shortDesc: "Heals 1/4 max HP when an opposing Pokemon switches out.",
+	},
+	fairduel: {
+		name: "Fair Duel",
+		desc: "On activation, this Pokemon Taunts itself and a single adjacent opposing Pokemon, then raises the higher of each Pokemon's Attack or Special Attack by 1 stage.",
+		shortDesc: "Taunts user and adjacent foe, then boosts each's highest offensive stat by 1 stage.",
+	},
+	gullible: {
+		name: "Gullible",
+		desc: "If this Pokemon is Katamasu and has at least one unfainted ally, it changes to Influenced Form on switch-in. Upon transforming, it copies its typing by taking the primary type of the second-to-last Pokemon in team order and the secondary type of the last Pokemon in team order. This type is determined only on the first switch-in and is retained until it is the last Pokemon remaining. If all allies faint, it reverts to Katamasu and loses its copied typing.",
+		shortDesc: "If Influenced Form, copies the primary and secondary types from the last 2 teammates. Reverts when alone.",
+
+		transform: "[POKEMON] was influenced by it's team!",
+		transformEnd: "[POKEMON] snapped back to itself!",
 	},
 
 	// CAP

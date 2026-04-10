@@ -94434,6 +94434,7 @@ export const Learnsets: import('../../../sim/dex-species').ModdedLearnsetDataTab
 		learnset: {
 			moonblast: ["9M"],
 			drainingkiss: ["9M"],
+			moonlight: ["9M"],
 //			calmmind: ["9M"], 
 			playrough: ["9M"],
 			dazzlinggleam: ["9M"],

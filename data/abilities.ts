@@ -2015,23 +2015,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
 				}
 			}
 		},
-		onDamagingHit(damage, target, source, move) {
-			if (target.illusion) {
-				this.singleEvent('End', this.dex.abilities.get('Illusion'), target.abilityState, target, source, move);
-			}
-		},
-		onEnd(pokemon) {
-			if (pokemon.illusion) {
-				this.debug('illusion cleared');
-				pokemon.illusion = null;
-				const details = pokemon.getUpdatedDetails();
-				this.add('replace', pokemon, details);
-				this.add('-end', pokemon, 'Illusion');
-				if (this.ruleTable.has('illusionlevelmod')) {
-					this.hint("Illusion Level Mod is active, so this Pok\u00e9mon's true level was hidden.", true);
-				}
-			}
-		},
 		onFaint(pokemon) {
 			pokemon.illusion = null;
 		},
@@ -5763,6 +5746,83 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         rating: 3,
         num: -1011,
     },
+	fairduel: {
+    	onStart(pokemon) {
+        	this.add('-ability', pokemon, 'Fair Duel');
+        	pokemon.addVolatile('taunt');
+        	for (const target of pokemon.foes()) {
+        	    target.addVolatile('taunt');
+            	const targetAtk = target.getStat('atk', false, true);	// Boost the opp's highest offensive stat
+            	const targetSpa = target.getStat('spa', false, true);
+            	if (targetAtk >= targetSpa) {
+                	this.boost({ atk: 1 }, target, target);
+            	} else {
+            	    this.boost({ spa: 1 }, target, target);
+            	}
+        	}
+        	const selfAtk = pokemon.getStat('atk', false, true); 	// Boost the user's highest offensive stat
+        	const selfSpa = pokemon.getStat('spa', false, true);
+        	if (selfAtk >= selfSpa) {
+        	    this.boost({ atk: 1 }, pokemon, pokemon);
+        	} else {
+        	    this.boost({ spa: 1 }, pokemon, pokemon);
+        	}
+    	},
+    	flags: {},
+    	name: "Fair Duel",
+    	rating: 3,
+    	num: -1012,
+	},
+	gullible: {
+    	onSwitchInPriority: -1,
+    	onStart(pokemon) {
+        	if (pokemon.baseSpecies.baseSpecies !== 'Katamasu' || pokemon.transformed) return;
+        	const hasAlly = pokemon.side.pokemon.some(p => p !== pokemon && !p.fainted);
+        	if (hasAlly) {
+            	if (pokemon.species.id === 'katamasu') {
+                	pokemon.formeChange('Katamasu-Influenced');
+            	}
+            	if (!pokemon.abilityState.storedTypes) { 		// Determine types only once, on the very first switch-in
+                	const team = pokemon.side.pokemon;
+                	const secondLast = team[team.length - 2];
+                	const last = team[team.length - 1];
+                	const type1 = secondLast?.getTypes()[0] ?? pokemon.getTypes()[0];
+                	const type2 = last?.getTypes()[1] ?? last?.getTypes()[0] ?? type1;
+                	pokemon.abilityState.storedTypes = [type1, type2];
+            	}
+            	pokemon.setType(pokemon.abilityState.storedTypes);
+            	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
+        	} else {
+            	if (pokemon.species.id === 'katamasuinfluenced') {
+                	pokemon.formeChange('Katamasu');
+            	}
+            	pokemon.setType(pokemon.baseSpecies.types);
+        	}
+    	},
+    	onResidualOrder: 29,
+    	onResidual(pokemon) {
+        	if (pokemon.baseSpecies.baseSpecies !== 'Katamasu' || pokemon.transformed || !pokemon.hp) return;
+        	const hasAlly = pokemon.side.pokemon.some(p => p !== pokemon && !p.fainted);
+        	if (hasAlly) {
+            	if (pokemon.species.id === 'katamasu') {
+                	pokemon.formeChange('Katamasu-Influenced');
+                	if (pokemon.abilityState.storedTypes) { 				// Reapply stored types if forme just changed mid-battle
+                    	pokemon.setType(pokemon.abilityState.storedTypes);
+                    	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
+                	}
+            	}
+        	} else {
+            	if (pokemon.species.id === 'katamasuinfluenced') {
+                	pokemon.formeChange('Katamasu');
+                	pokemon.setType(pokemon.baseSpecies.types);
+            	}
+        	}
+    	},
+    	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
+    	name: "Gullible",
+    	rating: 3,
+    	num: -1013,
+	},
 
 	// CAP
 
