@@ -2325,7 +2325,7 @@ export const AbilitiesText: { [id: IDEntry]: AbilityText } = {
 	gullible: {
 		name: "Gullible",
 		desc: "If this Pokemon is Katamasu and has at least one unfainted ally, it changes to Influenced Form on switch-in. Upon transforming, it copies its typing by taking the primary type of the second-to-last Pokemon in team order and the secondary type of the last Pokemon in team order. This type is determined only on the first switch-in and is retained until it is the last Pokemon remaining. If all allies faint, it reverts to Katamasu and loses its copied typing.",
-		shortDesc: "If Influenced Form, copies the primary and secondary types from the last 2 teammates. Reverts when alone.",
+		shortDesc: "If Influenced Form, user copies types from their last 2 teammates. Reverts when alone.",
 
 		transform: "[POKEMON] was influenced by it's team!",
 		transformEnd: "[POKEMON] snapped back to itself!",
