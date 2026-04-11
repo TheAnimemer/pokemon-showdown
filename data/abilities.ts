@@ -5801,6 +5801,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
     	},
     	onResidualOrder: 29,
     	onResidual(pokemon) {
+        	if (!pokemon.activeTurns) return;
         	if (pokemon.baseSpecies.baseSpecies !== 'Katamasu' || pokemon.transformed || !pokemon.hp) return;
         	const hasAlly = pokemon.side.pokemon.some(p => p !== pokemon && !p.fainted);
         	if (hasAlly) {
