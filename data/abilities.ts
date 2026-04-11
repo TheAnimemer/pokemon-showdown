@@ -5791,7 +5791,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 	pokemon.abilityState.storedTypes = [type1, type2];
             	}
             	pokemon.setType(pokemon.abilityState.storedTypes);
-            	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
+            //	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
         	} else {
             	if (pokemon.species.id === 'katamasuinfluenced') {
                 	pokemon.formeChange('Katamasu');
