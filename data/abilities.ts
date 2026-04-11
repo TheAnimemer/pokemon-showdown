@@ -5792,7 +5792,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
             	}
             	pokemon.setType(pokemon.abilityState.storedTypes);
             	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
-            	pokemon.abilityState.announcedThisTurn = true;
         	} else {
             	if (pokemon.species.id === 'katamasuinfluenced') {
                 	pokemon.formeChange('Katamasu');
@@ -5807,9 +5806,8 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         	if (hasAlly) {
             	if (pokemon.species.id === 'katamasu') {
                 	pokemon.formeChange('Katamasu-Influenced');
-                	if (pokemon.abilityState.storedTypes && !pokemon.abilityState.announcedThisTurn) {
+                	if (pokemon.abilityState.storedTypes) {
                     	pokemon.setType(pokemon.abilityState.storedTypes);
-                    	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
                 	}
             	}
         	} else {
@@ -5818,7 +5816,6 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 	pokemon.setType(pokemon.baseSpecies.types);
             	}
         	}
-        	pokemon.abilityState.announcedThisTurn = false;
     	},
     	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
     	name: "Gullible",
