@@ -5788,7 +5788,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 	const last = team[team.length - 1];
                 	const type1 = secondLast?.getTypes()[0] ?? pokemon.getTypes()[0];
                 	const type2 = last?.getTypes()[0] ?? type1;
-                	pokemon.abilityState.storedTypes = [type1, type2];
+                	pokemon.abilityState.storedTypes = type1 === type2 ? [type1] : [type1, type2];
             	}
             	pokemon.setType(pokemon.abilityState.storedTypes);
 				this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'));
