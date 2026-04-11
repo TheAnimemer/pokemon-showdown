@@ -5748,11 +5748,11 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
     },
 	fairduel: {
     	onStart(pokemon) {
-        	this.add('-ability', pokemon, 'Fair Duel');
+        	this.add('-activate', pokemon, 'ability: Fair Duel');
         	pokemon.addVolatile('taunt');
         	for (const target of pokemon.foes()) {
         	    target.addVolatile('taunt');
-            	const targetAtk = target.getStat('atk', false, true);	// Boost the opp's highest offensive stat
+            	const targetAtk = target.getStat('atk', false, true);
             	const targetSpa = target.getStat('spa', false, true);
             	if (targetAtk >= targetSpa) {
                 	this.boost({ atk: 1 }, target, target);
@@ -5760,7 +5760,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
             	    this.boost({ spa: 1 }, target, target);
             	}
         	}
-        	const selfAtk = pokemon.getStat('atk', false, true); 	// Boost the user's highest offensive stat
+        	const selfAtk = pokemon.getStat('atk', false, true);
         	const selfSpa = pokemon.getStat('spa', false, true);
         	if (selfAtk >= selfSpa) {
         	    this.boost({ atk: 1 }, pokemon, pokemon);
@@ -5787,11 +5787,12 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 	const secondLast = team[team.length - 2];
                 	const last = team[team.length - 1];
                 	const type1 = secondLast?.getTypes()[0] ?? pokemon.getTypes()[0];
-                	const type2 = last?.getTypes()[1] ?? last?.getTypes()[0] ?? type1;
+                	const type2 = last?.getTypes()[0] ?? type1;
                 	pokemon.abilityState.storedTypes = [type1, type2];
             	}
             	pokemon.setType(pokemon.abilityState.storedTypes);
             	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
+            	pokemon.abilityState.announcedThisTurn = true;
         	} else {
             	if (pokemon.species.id === 'katamasuinfluenced') {
                 	pokemon.formeChange('Katamasu');
@@ -5806,7 +5807,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
         	if (hasAlly) {
             	if (pokemon.species.id === 'katamasu') {
                 	pokemon.formeChange('Katamasu-Influenced');
-                	if (pokemon.abilityState.storedTypes) { 				// Reapply stored types if forme just changed mid-battle
+                	if (pokemon.abilityState.storedTypes && !pokemon.abilityState.announcedThisTurn) {
                     	pokemon.setType(pokemon.abilityState.storedTypes);
                     	this.add('-start', pokemon, 'typechange', pokemon.abilityState.storedTypes.join('/'), '[from] ability: Gullible');
                 	}
@@ -5817,6 +5818,7 @@ export const Abilities: import('../sim/dex-abilities').AbilityDataTable = {
                 	pokemon.setType(pokemon.baseSpecies.types);
             	}
         	}
+        	pokemon.abilityState.announcedThisTurn = false;
     	},
     	flags: { failroleplay: 1, noreceiver: 1, noentrain: 1, notrace: 1, failskillswap: 1, cantsuppress: 1 },
     	name: "Gullible",
