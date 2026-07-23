@@ -93793,10 +93793,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			storedpower: ["9M"],
 			aurasphere: ["9M"],
 			magiccoat: ["9M"],
-			moonlight: ["9M"],
+//			moonlight: ["9M"],
 			psychic: ["9M"],
 			trick: ["9M"],
-			wish: ["9M"],
+//			wish: ["9M"],
 			voltswitch: ["9M"],
 			lightscreen: ["9M"],
 			knockoff: ["9M"],
@@ -93911,7 +93911,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			leechseed: ["9M"],
 			terablast: ["9M"],
 			vacuumwave: ["9M"],
-			knockoff: ["9M"],
+//			knockoff: ["9M"],
 			grassknot: ["9M"],
 			uturn: ["9M"],
 			earthpower: ["9M"],
@@ -94443,8 +94443,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			woodhammer: ["9M"],
 			disable: ["9M"],
 			detect: ["9M"],
-
-			// Added special moves (Grass, Bug, Normal)
 			gigadrain: ["9M"],
 			energyball: ["9M"],
 			solarbeam: ["9M"],
@@ -94461,7 +94459,8 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 		learnset: {
 			moonblast: ["9M"],
 			drainingkiss: ["9M"],
-			calmmind: ["9M"],
+			moonlight: ["9M"],
+//			calmmind: ["9M"], 
 			playrough: ["9M"],
 			dazzlinggleam: ["9M"],
 			fairywind: ["9M"],
@@ -94579,6 +94578,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	raitenna: {
 		learnset: {
+			wildcharge: ["9M"],
 			electricpiercer: ["9M"],
 			signalbeam: ["9M"],
 			bugbuzz: ["9M"],
@@ -94712,7 +94712,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			round: ["9M"],
 		},
 	},
-
 	erinyoxic: {
 		learnset: {
 			scaleshot: ["9M"],
@@ -95440,7 +95439,6 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			watergun: ["9M"],
 			waterpulse: ["9M"],
 			workup: ["9M"],
-			spiritbreak: ["9M"],
 			zapcannon: ["9M"],
 		},
 	},
@@ -96556,6 +96554,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			earthquake: ["9M"],
 			bulldoze: ["9M"],
 			brutalswing: ["9M"],
+			dragonclaw: ["9M"],
 			sunnyday: ["9M"],
 			facade: ["9M"],
 			endure: ["9M"],
@@ -96927,7 +96926,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			shadowball: ["9M"],
 			knockoff: ["9M"],
 			silverwind: ["9M"],
-			calmmind: ["9M"],
+//			calmmind: ["9M"],
 			absorb: ["9M"],
 			vinewhip: ["9M"],
 			razorleaf: ["9M"],

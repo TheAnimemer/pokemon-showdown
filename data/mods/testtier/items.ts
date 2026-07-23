@@ -7790,7 +7790,7 @@ export const Items: import('../../../sim/dex-items').ModdedItemDataTable = {
 		},
 		num: -1007,
 		gen: 9,
-	},	
+	},
 	ackleberry: {
 		name: "Ackle Berry",
 		spritenum: 362,
