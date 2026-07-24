@@ -96598,7 +96598,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			sinfulnectar: ["9M"],
 			endure: ["9M"],
 			moonblast: ["9M"],
-			hydropump: ["9M"],
+//			hydropump: ["9M"],
 			surf: ["9M"],
 			scald: ["9M"],
 			encore: ["9M"],
