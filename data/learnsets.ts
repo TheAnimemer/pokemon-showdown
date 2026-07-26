@@ -95285,7 +95285,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			nastyplot: ["9M"],
 			hyperbeam: ["9M"],
 			hypervoice: ["9M"],
-			partingshot: ["9M"],
+//			partingshot: ["9M"],
 			earthpower: ["9M"],
 			futuresight: ["9M"],
 			psyshock: ["9M"],
