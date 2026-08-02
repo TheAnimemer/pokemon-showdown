@@ -95504,7 +95504,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	galvatrox: {
 		learnset: {
-			flipturn: ["9M"],
+//			flipturn: ["9M"],
 			acid: ["9L1", "8L1"],
 			acidspray: ["9M", "9L1", "8L1"],
 			attract: ["8M"],
