@@ -94061,7 +94061,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			brickbreak: ["9M"],
 			shedtail: ["9M"],
 			uturn: ["9M"],
-			recover: ["9M"],
+			synthesis: ["9M"],
 			dracometeor: ["9M"],
 			breakingswipe: ["9M"],
 			scaleshot: ["9M"],
@@ -94403,7 +94403,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			substitute: ["9M"],
 			leechseed: ["9M"],
 			protect: ["9M"],
-			recover: ["9M"],
+			synthesis: ["9M"],
 			wish: ["9M"],
 			toxic: ["9M"],
 			infestation: ["9M"],
@@ -95590,7 +95590,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			{generation: 8, level: 50, shiny: true, nature: "Rash", abilities: ["punkrock"], moves: ["overdrive", "sludgewave", "boomburst", "risingvoltage"], pokeball: "cherishball"},
 		],
 	},
-		spirition: {
+	spirition: {
 		learnset: {
 			protect: ["9M"],
 			substitute: ["9M"],
@@ -95614,7 +95614,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			stealthrock: ["9M"],
 			encore: ["9M"],
 			psychic: ["9M"],
-			recover: ["9M"],
+			moonlight: ["9M"],
 			feintattack: ["9M"],
 			nightshade: ["9M"],
 			astonish: ["9M"],
