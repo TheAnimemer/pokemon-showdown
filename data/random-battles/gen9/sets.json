@@ -7764,11 +7764,69 @@
         "level": 77,
         "sets": [
             {
-                "role": "Setup Sweeper",
-                "movepool": ["Bug Bite", "Knock Off", "Sucker Punch", "Swords Dance"],
+                "role": "Fast Attacker",
+                "movepool": ["Bug Buzz", "Dark Pulse", "Giga Drain", "Knock Off", "Psychic", "U-turn"],
                 "abilities": ["Technician"],
                 "teraTypes": ["Bug", "Dark"]
+            },
+            {
+                "role": "Fast Attacker",
+                "movepool": ["Aerial Ace", "Close Combat", "First Impression", "Knock Off", "Pursuit", "Rock Tomb", "U-turn"],
+                "abilities": ["Moxie", "Technician"],
+                "teraTypes": ["Bug", "Dark", "Fighting"]
+            },
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Bug Buzz", "Dark Pulse", "Giga Drain", "Nasty Plot", "Psychic"],
+                "abilities": ["Technician"],
+                "teraTypes": ["Bug", "Dark", "Grass"]
+            },
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Aerial Ace", "Bug Bite", "Fell Stinger", "Knock Off", "Leech Life", "Rock Tomb", "Sucker Punch", "Swords Dance"],
+                "abilities": ["Moxie", "Technician"],
+                "teraTypes": ["Bug", "Dark"]
             }
-        ]   
+        ]
+    },
+    "infestalk": {
+        "level": 86,
+        "sets": [
+            {
+                "role": "Bulky Support",
+                "movepool": ["U-Turn", "Wish", "Synthesis", "Sleep Powder", "Leaf Blade", "Spiky Shield"],
+                "abilities": ["Regenerator"],
+                "teraTypes": ["Steel", "Poison", "Water"]
+            }
+            {
+                "role": "Bulky Support",
+                "movepool": ["Leech Seed", "Substitute", "Spiky Shield", "Lunge"],
+                "abilities": ["Harvest"],
+                "teraTypes": ["Steel", "Poison", "Water"]
+            }
+        ]
+    },
+    "obsidislug": {
+        "level": 75,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Shell Smash", "Fire Blast", "Earth Power", "Flamethrower", "Draco Meteor", "Recover"],
+                "abilities": ["Rough Skin"],
+                "teraTypes": ["Ground", "Grass", "Fire", "Fire"]
+            },
+            {
+                "role": "Tera Blast user",
+                "movepool": ["Shell Smash", "Fire Blast", "Earth Power", "Flamethrower", "Tera Blast"],
+                "abilities": ["Rough Skin"],
+                "teraTypes": ["Dragon", "Dragon", "Dragon", "Grass"]
+            },
+            {
+                "role": "Bulky Support",
+                "movepool": ["Lava Plume", "Recover", "Stealth Rock", "Earth Power", "Toxic", "Yawn", "Spikes"],
+                "abilities": ["Rough Skin"],
+                "teraTypes": ["Fairy", "Grass"]
+            }
+        ]
     }
 }
