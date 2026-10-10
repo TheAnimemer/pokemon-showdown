@@ -7797,7 +7797,7 @@
                 "movepool": ["U-Turn", "Wish", "Synthesis", "Sleep Powder", "Leaf Blade", "Spiky Shield"],
                 "abilities": ["Regenerator"],
                 "teraTypes": ["Steel", "Poison", "Water"]
-            }
+            },
             {
                 "role": "Bulky Support",
                 "movepool": ["Leech Seed", "Substitute", "Spiky Shield", "Lunge"],
