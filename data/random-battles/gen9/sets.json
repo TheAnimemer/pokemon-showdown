@@ -7759,5 +7759,16 @@
                 "teraTypes": ["Dark"]
             }
         ]
+    },
+    "fleaclipse": {
+        "level": 77,
+        "sets": [
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Bug Bite", "Knock Off", "Sucker Punch", "Swords Dance"],
+                "abilities": ["Technician"],
+                "teraTypes": ["Bug", "Dark"]
+            }
+        ]   
     }
 }
