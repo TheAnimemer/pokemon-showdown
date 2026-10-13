@@ -7806,15 +7806,9 @@
             }
         ]
     },
-    "obsidislug": {
-        "level": 75,
+"obsidislug": {
+        "level": 80,
         "sets": [
-            {
-                "role": "Setup Sweeper",
-                "movepool": ["Shell Smash", "Fire Blast", "Earth Power", "Flamethrower", "Draco Meteor", "Recover"],
-                "abilities": ["Rough Skin"],
-                "teraTypes": ["Ground", "Grass", "Fire", "Fire"]
-            },
             {
                 "role": "Tera Blast user",
                 "movepool": ["Shell Smash", "Fire Blast", "Earth Power", "Flamethrower", "Tera Blast"],
@@ -7823,9 +7817,55 @@
             },
             {
                 "role": "Bulky Support",
-                "movepool": ["Lava Plume", "Recover", "Stealth Rock", "Earth Power", "Toxic", "Yawn", "Spikes"],
+                "movepool": ["Lava Plume", "Recover", "Stealth Rock", "Earth Power", "Toxic", "Yawn", "Spikes", "Draco Meteor"],
                 "abilities": ["Rough Skin"],
                 "teraTypes": ["Fairy", "Grass"]
+            }
+        ]
+    },
+    "witheroot": {
+        "level": 87,
+        "sets": [
+            {
+                "role": "Bulky Attacker",
+                "movepool": ["Power Whip", "Poison Jab", "Knock Off", "Earthquake", "Sleep Powder"],
+                "abilities": ["Toxic Debris"],
+                "teraTypes": ["Dragon", "Grass", "Steel"]
+            },
+            {
+                "role": "Bulky Support",
+                "movepool": ["Leech Seed", "Toxic", "Knock Off", "Power Whip", "Protect"],
+                "abilities": ["Corrosion"],
+                "teraTypes": ["Dragon", "Water"]
+            },
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Swords Dance", "Earthquake", "Outrage", "Knock Off", "Power Whip", "Poison Jab", "Sucker Punch"],
+                "abilities": ["Toxic Debris"],
+                "teraTypes": ["Dragon", "Dark", "Fire"]
+            }
+        ]
+    },
+    "ragik": {
+        "level": 80,
+        "sets": [
+            {
+                "role": "Tera Blast user",
+                "movepool": ["Megahorn", "Gunk Shot", "Tera Blast", "Swords Dance"],
+                "abilities": ["Compound Eyes"],
+                "teraTypes": ["Ground"]
+            },
+            {
+                "role": "Setup Sweeper",
+                "movepool": ["Megahorn", "Gunk Shot", "Flare Blitz", "Swords Dance"],
+                "abilities": ["Smoldering End"],
+                "teraTypes": ["Fire"]
+            },
+            {
+                "role": "Wallbreaker",
+                "movepool": ["Megahorn", "Gunk Shot", "Flare Blitz", "U-Turn", "Power Whip"],
+                "abilities": ["Smoldering End", "Compound Eyes"],
+                "teraTypes": ["Fire", "Grass", "Bug"]
             }
         ]
     }
