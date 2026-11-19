@@ -93939,7 +93939,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			grassyglide: ["9M"],
 			aerialace: ["9M"],
 			attract: ["9M"],
-			bellydrum: ["9M"],
+//			bellydrum: ["9M"],
 			bite: ["9M"],
 			block: ["9M"],
 			bulldoze: ["9M"],
