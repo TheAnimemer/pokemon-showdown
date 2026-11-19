@@ -38,7 +38,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	lizendro: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	ganmosu: {
 		tier: "OU",
@@ -178,7 +178,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	delphoxtanosomega: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	sinester: {
 		tier: "OU",
@@ -218,7 +218,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	diatridon: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	gloyster: {
 		tier: "OU",
@@ -293,7 +293,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	liliamp: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	piracron: {
 		tier: "OU",
@@ -313,7 +313,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	coolduck: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	fukage: {
 		tier: "Uber",
@@ -1505,7 +1505,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	zapdosgalar: {
 		tier: "RU",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	moltres: {
 		tier: "(OU)",
@@ -4254,7 +4254,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	hawlucha: {
 		tier: "UU",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	dedenne: {
 		tier: "ZU",
@@ -4893,7 +4893,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	kartana: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	guzzlord: {
 		isNonstandard: "Past",
@@ -4963,7 +4963,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	melmetal: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	melmetalgmax: {
 		isNonstandard: "Past",
@@ -4993,7 +4993,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	cinderace: {
 		tier: "(OU)",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	cinderacegmax: {
 		isNonstandard: "Past",
@@ -5824,7 +5824,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tinglu: {
 		tier: "(OU)",
 		doublesTier: "(DOU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	chienpao: {
 		tier: "Uber",
