@@ -133,7 +133,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	ragik: {
 		tier: "OU",
 		doublesTier: "DOU",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	pallapad: {
 		tier: "OU",
@@ -1999,12 +1999,12 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	tyranitar: {
 		tier: "UU",
 		doublesTier: "(DOU)",
-		natDexTier: "UU",
+		natDexTier: "RUBL",
 	},
 	tyranitarmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	lugia: {
 		tier: "Uber",
@@ -2733,7 +2733,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	latios: {
 		tier: "UU",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	latiosmega: {
 		isNonstandard: "Past",
@@ -4823,7 +4823,7 @@ export const FormatsData: import('../sim/dex-species').SpeciesFormatsDataTable =
 	kommoo: {
 		tier: "UUBL",
 		doublesTier: "(DUU)",
-		natDexTier: "UUBL",
+		natDexTier: "UU",
 	},
 	kommoototem: {
 		isNonstandard: "Past",

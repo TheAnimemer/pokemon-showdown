@@ -93804,7 +93804,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 			spikes: ["9M"],
 			playrough: ["9M"],
 			seismictoss: ["9M"],
-			wavecrash: ["9M"],
+//			wavecrash: ["9M"],
 			rest: ["9M"],
 			sleeptalk: ["9M"],
 			bodyslam: ["9M"],
@@ -94833,6 +94833,10 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	gravesect: {
 		learnset: {
+			ominouswind: ["9M"],
+			astonish: ["9M"],
+			spite: ["9M"],
+			grudge: ["9M"],
 			stickyweb: ["9M"],
 			shadowball: ["9M"],
 			willowisp: ["9M"],
@@ -96465,6 +96469,7 @@ export const Learnsets: import('../sim/dex-species').LearnsetDataTable = {
 	},
 	stratoll: {
 		learnset: {
+			stealthrock: ["9M"],
 			bodypress: ["9M"],
 			earthquake: ["9M"],
 			rockslide: ["9M"],
