@@ -66,6 +66,8 @@ function saveCustomAvatars(instant?: boolean) {
 	FS(AVATARS_FILE).writeUpdate(() => JSON.stringify(customAvatars), { throttle: instant ? null : 60_000 });
 }
 
+const GIF_AVATARS = new Set(['custy302']);
+
 export const Avatars = new class {
 	avatars = customAvatars;
 	userCanUse(user: User, avatar: string): AvatarID | null {
@@ -91,7 +93,6 @@ export const Avatars = new class {
 	save(instant?: boolean) {
 		saveCustomAvatars(instant);
 	}
-	const GIF_AVATARS = new Set(['custy302']);
 
 	src(avatar: AvatarID) {
 		if (avatar.includes('.')) return '';
