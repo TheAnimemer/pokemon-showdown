@@ -91,9 +91,14 @@ export const Avatars = new class {
 	save(instant?: boolean) {
 		saveCustomAvatars(instant);
 	}
+	const GIF_AVATARS = new Set(['custy302']);
+
 	src(avatar: AvatarID) {
 		if (avatar.includes('.')) return '';
-		const avatarUrl = avatar.startsWith('#') ? `trainers-custom/${avatar.slice(1)}.png` : `trainers/${avatar}.png`;
+		const ext = GIF_AVATARS.has(avatar) ? 'gif' : 'png';
+		const avatarUrl = avatar.startsWith('#') ?
+			`trainers-custom/${avatar.slice(1)}.${ext}` :
+			`trainers/${avatar}.${ext}`;
 		return `https://${Config.routes.client}/sprites/${avatarUrl}`;
 	}
 	exists(avatar: string) {
